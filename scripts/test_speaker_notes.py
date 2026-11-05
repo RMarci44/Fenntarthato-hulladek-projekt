@@ -18,8 +18,10 @@ def count_words(text):
     return len(tokens)
 
 def test_speaker_notes():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    md_path = os.path.join(base_dir, "SPEAKER_NOTES.md")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(script_dir) if os.path.basename(script_dir) == "scripts" else script_dir
+    docs_dir = os.path.join(base_dir, "docs") if os.path.isdir(os.path.join(base_dir, "docs")) else base_dir
+    md_path = os.path.join(docs_dir, "SPEAKER_NOTES.md")
     assert os.path.exists(md_path), f"File missing: {md_path}"
     size = os.path.getsize(md_path)
     assert size > 20000, f"File too small ({size} bytes)"

@@ -17,10 +17,12 @@ from pathlib import Path
 class TestDefenseQAGuide(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.doc_path = Path(__file__).resolve().parent / "DEFENSE_QA.md"
+        script_dir = Path(__file__).resolve().parent
+        proj_dir = script_dir.parent if script_dir.name == "scripts" else script_dir
+        docs_dir = proj_dir / "docs" if (proj_dir / "docs").is_dir() else proj_dir
+        cls.doc_path = docs_dir / "DEFENSE_QA.md"
         if not cls.doc_path.exists():
-            # Fallback path if run from project root
-            cls.doc_path = Path("Projekt/DEFENSE_QA.md").resolve()
+            cls.doc_path = Path("docs/DEFENSE_QA.md").resolve()
         
         with open(cls.doc_path, "r", encoding="utf-8") as f:
             cls.content = f.read()

@@ -17,7 +17,7 @@ Ez a dokumentum rögzíti a **Fenntartható hulladékgazdálkodás** MSc kurzus 
 | **Összköltségvetés** | 4 200 000 EUR (100% EU támogatási intenzitás, 520 PM) |
 | **TRL Ugrás** | **TRL 3** (laboratóriumi elvigazolás) ➔ **TRL 6** (M36, MS3: ipari pilot, 100 000 db legyártva, D3.2) ➔ **TRL 7** (M44–M48: üzemi töltősori validáció, barista teszt, akkreditált komposztálhatósági igazolás, D4.1) |
 | **Prezentáció fájl** | `PHACK_Prezentacio_Vegleges.pptx` (24 dia) |
-| **Dokumentumok** | Kiindulópont: `FELKESZULESI_UTMUTATO.md`; beszédszöveg: `SPEAKER_NOTES.md`; vita: `DEFENSE_QA.md`; források és ellenőrzöttség: `FORRASOK.md`; döntések: `DECISIONS.md`; státusz: `TODO.md` |
+| **Dokumentumok** | Főmappa: `FELKESZULESI_UTMUTATO.md`; `docs/`: `SPEAKER_NOTES.md`, `DEFENSE_QA.md`, `FORRASOK.md`, `DECISIONS.md`, `TODO.md`, `PROJECT_CONTEXT.md`; `scripts/`: generátorok és tesztek; `etc/`: sablon, minta, `info.txt`, `lap1–4.jpg` |
 | **Csoportlétszám** | 6 hallgató (Koordinátor, RD1, RD2, Innováció/Piac, Disszemináció, Pénzügy/Menedzsment) |
 
 ---

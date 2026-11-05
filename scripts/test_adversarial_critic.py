@@ -20,10 +20,12 @@ if hasattr(sys.stdout, 'reconfigure'):
 class AdversarialCriticSuite(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        base_dir = Path(__file__).resolve().parent
-        cls.dqa_path = base_dir / "DEFENSE_QA.md"
-        cls.sn_path = base_dir / "SPEAKER_NOTES.md"
-        cls.todo_path = base_dir / "TODO.md"
+        script_dir = Path(__file__).resolve().parent
+        proj_dir = script_dir.parent if script_dir.name == "scripts" else script_dir
+        docs_dir = proj_dir / "docs" if (proj_dir / "docs").is_dir() else proj_dir
+        cls.dqa_path = docs_dir / "DEFENSE_QA.md"
+        cls.sn_path = docs_dir / "SPEAKER_NOTES.md"
+        cls.todo_path = docs_dir / "TODO.md"
 
         with open(cls.dqa_path, "r", encoding="utf-8") as f:
             cls.dqa = f.read()

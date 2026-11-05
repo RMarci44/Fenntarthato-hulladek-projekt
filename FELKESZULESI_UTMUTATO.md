@@ -213,31 +213,29 @@ Szabály: 15 percnél leállítanak. A diaszám formátuma `x/24`. A nyelv a di�
 
 ## 10. Fájltérkép, build és ellenőrzés
 
-| Fájl | Mire való |
+| Fájl / Mappa | Mire való |
 |---|---|
-| `PHACK_Prezentacio_Vegleges.pptx` | A 24 dia, beágyazott előadói jegyzetekkel |
-| `slides_rendered/slide_01..24.png` | A diák 1280×960 képe (gyors előnézet) |
-| `FELKESZULESI_UTMUTATO.md` | Ez a dokumentum |
-| `SPEAKER_NOTES.md` | Diánkénti beszédszöveg, időzítés, szószám |
-| `DEFENSE_QA.md` | Vita: Top 10 csapdakérdés, Topic A–F, WP-mátrix |
-| `FORRASOK.md` | Források és az állítások státusza (ellenőrzött / konzorciumi becslés) |
-| `PROJECT_CONTEXT.md` | Adatlap: alapadatok, konzorcium, WP-k, KPI-k |
-| `DECISIONS.md` | Tervezési döntések (ADR-01…06) |
-| `TODO.md` | Státusz és főpróba-ellenőrzőlista |
-| `info.txt`, `etc\` | Oktatói követelmények, sablon, mintaprezentáció |
-| `lap2.jpg`, `lap3.jpg`, `lap4.jpg` | A csapat kézzel írt GY02 feladatlapjai: ötlet (PHACK), polimer/technológia/termék, KPI-k (<+10% költség, >2% kiváltás, lebomlás <1 év). A deck KPI-i ezekkel konzisztensek |
-| `lap1.jpg` | A `lap4.jpg` duplikátuma, nem tartalmaz új információt |
-| `generate_final_presentation.py`, `phack_figures.py`, `build_and_verify_notes.py` | A deck, az ábrák és a jegyzetek generátora |
-| `test_*.py` | Regressziós tesztek |
+| `PHACK_Prezentacio_Vegleges.pptx` | **Főmappa:** A 24 dia a hivatalos BME PT sablonban, beágyazott előadói jegyzetekkel |
+| `FELKESZULESI_UTMUTATO.md` | **Főmappa:** Ez a központi felkészülési dokumentum (nulláról tanulható összefoglaló) |
+| `docs/SPEAKER_NOTES.md` | Diánkénti szó szerinti beszédszöveg (12:00 perc, 1515 szó), időzítés, színpadi átadás |
+| `docs/DEFENSE_QA.md` | Vita: Top 10 csapdakérdés (15 mp-es válaszokkal), Topic A–F mélyebb érvek, WP-mátrix |
+| `docs/FORRASOK.md` | Források és az állítások státusza (ellenőrzött irodalmi tény vs. konzorciumi célérték) |
+| `docs/PROJECT_CONTEXT.md` | Pályázati adatlap: alapadatok, konzorcium, WP-k, KPI-k |
+| `docs/DECISIONS.md` | Tervezési és mérnöki döntések naplója (ADR-01…06) |
+| `docs/TODO.md` | Státusz és előadás előtti főpróba-ellenőrzőlista |
+| `slides_rendered/slide_01..24.png` | A 24 dia 1280×960 PNG képe (gyors képi előnézet) |
+| `scripts/generate_final_presentation.py`, `scripts/phack_figures.py`, `scripts/build_and_verify_notes.py` | A PPTX prezentáció, a mérnöki ábrák és az előadói jegyzetek generátora |
+| `scripts/test_*.py` | Automatizált regressziós és konzisztencia-tesztek (4 tesztkészlet) |
+| `etc/FHG HE sablon 2026.pptx`, `etc/FHG mintaprezentáció 2026.pdf`, `etc/info.txt`, `etc/lap1..4.jpg` | Kurzus-alapanyagok: hivatalos sablon, mintaprezentáció, oktatói követelmények, kéziratos GY02 lapok |
 
-**Újragenerálás** (PowerPoint szükséges, Windows):
+**Újragenerálás és ellenőrzés** (a `Projekt` főmappából):
 
 ```powershell
-python generate_final_presentation.py
-python test_challenger_stress.py
-python test_speaker_notes.py
-python test_defense_qa.py
-python test_adversarial_critic.py
+python scripts/generate_final_presentation.py
+python scripts/test_challenger_stress.py
+python scripts/test_speaker_notes.py
+python scripts/test_defense_qa.py
+python scripts/test_adversarial_critic.py
 ```
 
 Szabály: ha szám változik, a diákon, a `build_and_verify_notes.py`/`SPEAKER_NOTES.md`-ben, a `DEFENSE_QA.md`-ben és a teszteken is át kell vezetni, majd a 4 tesztnek zöldnek kell lennie.

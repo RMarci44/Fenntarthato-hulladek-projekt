@@ -25,17 +25,19 @@ except ImportError:
 class TestChallengerStress(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.proj_dir = Path(__file__).resolve().parent
+        script_dir = Path(__file__).resolve().parent
+        cls.proj_dir = script_dir.parent if script_dir.name == "scripts" else script_dir
+        cls.docs_dir = cls.proj_dir / "docs" if (cls.proj_dir / "docs").is_dir() else cls.proj_dir
         cls.root_dir = cls.proj_dir.parent
         cls.template_path = cls.proj_dir / "etc" / "FHG HE sablon 2026.pptx"
         cls.sample_pdf_path = cls.proj_dir / "etc" / "FHG mintaprezentáció 2026.pdf"
         cls.pptx_path = cls.proj_dir / "PHACK_Prezentacio_Vegleges.pptx"
         cls.slides_dir = cls.proj_dir / "slides_rendered"
-        cls.context_path = cls.proj_dir / "PROJECT_CONTEXT.md"
-        cls.decisions_path = cls.proj_dir / "DECISIONS.md"
-        cls.speaker_notes_path = cls.proj_dir / "SPEAKER_NOTES.md"
-        cls.defense_qa_path = cls.proj_dir / "DEFENSE_QA.md"
-        cls.todo_path = cls.proj_dir / "TODO.md"
+        cls.context_path = cls.docs_dir / "PROJECT_CONTEXT.md"
+        cls.decisions_path = cls.docs_dir / "DECISIONS.md"
+        cls.speaker_notes_path = cls.docs_dir / "SPEAKER_NOTES.md"
+        cls.defense_qa_path = cls.docs_dir / "DEFENSE_QA.md"
+        cls.todo_path = cls.docs_dir / "TODO.md"
 
     # =========================================================================
     # 1. PRESENTATION ASSETS STRESS-TEST
