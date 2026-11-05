@@ -66,6 +66,13 @@ Ez a dokumentum rögzíti a PHACK projekt során meghozott legfontosabb anyagtud
   - Személyi 2 080 000 € (50%) | Utazás és ellátás 130 000 € (3%) | Felszerelés 670 000 € (16%) | Egyéb áru, munka, szolgáltatás 480 000 € (11%) | Indirekt 25% átalány 840 000 € (20%) = 4 200 000 €.
   - Az indirekt költség a közvetlen költség 25%-a: 840 000 / 3 360 000 = 25%.
 - **Partnerek:** BME 144 PM / 1,05 M€; MOL 100 / 850 k€; ALFA 90 / 650 k€; RWTH 96 / 750 k€; BIO 50 / 550 k€; PCOFF 40 / 350 k€. WP-összegek: WP1 68, WP2 144, WP3 136, WP4 96, WP5 76 = 520 PM. Hazai (HU) részarány: 2,55 M€ (60,7%), 334 PM.
+- **Belső PM-mátrix (`Táblázat 3.1f`, sablon 13. dia szerint):**
+  - `BME (144 PM)`: WP1 18, WP2 78 (vezető), WP3 12, WP4 8, WP5 28 (vezető)
+  - `MOL (100 PM)`: WP1 8, WP2 30, WP3 56 (vezető), WP4 –, WP5 6
+  - `ALFA (90 PM)`: WP1 6, WP2 10, WP3 56, WP4 12, WP5 6
+  - `RWTH (96 PM)`: WP1 26 (vezető), WP2 12, WP3 –, WP4 42 (vezető), WP5 16
+  - `BIO (50 PM)`: WP1 6, WP2 14, WP3 4, WP4 18, WP5 8
+  - `PCOFF (40 PM)`: WP1 4, WP2 –, WP3 8, WP4 16, WP5 12
 - **Következmény:** minden PM-szám a diákon, a jegyzetekben, a Q&A-ban és a teszteken ennek megfelelően frissült; a beszédszöveg szószáma változatlan (1515 szó).
 
 ---

@@ -222,16 +222,16 @@ def embed_note(slide, slide_info):
 import re as _re
 
 HIGHLIGHT_PATTERN = _re.compile(
-    r"((?:10\s+milliárd|60\s+milliárd|12\s+milliárd|100\s*000\s*db|1\s*000\s*db|500\s+millió|15\s*000\s+tonna|"
+    r"((?:10\s+milliárd|53\s+milliárd|100\s*000\s*db|1\s*000\s*db|500\s+millió|500\s+tonna|"
     r"4,2\s*millió\s*EUR|4,2M\s*EUR|4\s*200\s*000\s*€|520\s*PM|520\s+személyhónap|50\s*kg|"
     r"TRL\s*3(?:\s*➔\s*TRL\s*7|\s*➔\s*6/7)?|TRL\s*6/7|TRL\s*6|TRL\s*7|TRL\s*4|TRL\s*5|"
-    r"15–19\s*bar|95°C|90–95°C|120°C|55–60°C|58°C|60–70°C|20–25°C|165–175°C|"
+    r"15–19\s*bar|max\.\s*19\s*bar|95°C|90–95°C|93±2°C|120°C|55–60°C|55–65°C|58°C|60–70°C|20–25°C|20–30°C|165–175°C|"
     r"HDT\s*>\s*95–105°C|Tm\s*>\s*140°C|Tm\s*≈\s*145–170°C|"
     r"OTR\s*<\s*0,05(?:\s*cm³/\(kapszula·nap(?:·bar)?\))?|WVTR\s*<\s*1,0–2,0\s*g/\(m²·nap\)|"
     r"0,40\s*mm|380–400\s*µm|±0,1\s*mm|±3%|<\s*3,5\s*mp|400\s*db/perc|20–35\s*kHz|30–45\s*nap|"
     r"EN\s*13432|NF\s*T51-800|ISO\s*14855|ISO\s*14040(?:/44|/14044)?|EU\s*10/2011|PPWR(?:\s*9\.\s*cikk)?|"
-    r"AGA\s*Art\.\s*6\.2\.B|25%|≥\s*25%\s*CO₂e|≥\s*25%|<\s*\+10%|>\s*2%|>90%|zéró\s+mikroműanyag|"
-    r"5-rétegű|orotinsav\w*|temperált|bölcsőtől-sírig|Cradle-to-Grave|"
+    r"AGA\s*Art\.\s*6\.2\.B|25%|≥\s*25%\s*CO₂e|≥\s*25%|<\s*\+10%|>\s*2%|>\s*90%|>90%|zéró\s+mikroműanyag|"
+    r"5-rétegű|orotinsav\w*|temperált|bölcsőtől-sírig|Cradle-to-Grave|PHA/PHBH|KPI\s*[1-4]|"
     r"D1\.1|D2\.1|D3\.1|D3\.2|D4\.1|D4\.2|D5\.1|D5\.2|MS1|MS2|MS3|WP1|WP2|WP3|WP4|WP5))",
     _re.IGNORECASE
 )
@@ -466,8 +466,8 @@ def build_all_slides():
     abs_items = [
         ("A piaci és környezeti probléma: ", "Évente több mint 10 milliárd hagyományos alumínium és fosszilis műanyag (PP) kávékapszula kerül kommunális hulladéklerakókba vagy égetőkbe az EU-ban, mivel a nedves kávézacc miatt a visszagyűjtési arány alacsony (NL: kb. 25%)."),
         ("A PHACK innovatív megoldása: ", "100%-ban természetes eredetű, mezőgazdasági melléktermékekből és használt sütőolajból (UCO) bakteriális fermentációval előállított polihidroxialkanoát (PHA/PHBH) kávékapszula és zárófólia kifejlesztése."),
-        ("Műszaki és feldolgozástechnológiai áttörés: ", "Orotinsavval nukleált hőstabil bio-kompound (HDT > 95–105°C, Tm > 140°C) és 5-rétegű bio-barrier síkfólia (0,40 mm, OTR < 0,05 cm³/(kapszula·nap·bar)) koextrúziója és temperált termoformálása, amely ellenáll a 95°C-os víznek és 15–19 bar nyomásnak."),
-        ("Zárt szerves körforgás és TRL 3 ➔ TRL 7 ugrás: ", "A kapszula a kávézaccal együtt, szétválasztás nélkül komposztálható házi kerti talajban (20–25°C, NF T51-800) és biogázüzemben (EN 13432), zéró mikroműanyaggal. 48 hónap alatt TRL 3-ról 100 000 db-os üzemi demonstrációig (TRL 7) jutunk.")
+        ("Műszaki és feldolgozástechnológiai áttörés: ", "Orotinsavval nukleált hőstabil bio-kompound (HDT > 95–105°C, Tm > 140°C) és 5-rétegű bio-barrier síkfólia (0,40 mm, OTR < 0,05 cm³/(kapszula·nap·bar)) koextrúziója és temperált termoformálása, amely ellenáll a 90–95°C-os (93±2°C) víznek és 15–19 bar (max. 19 bar) nyomásnak."),
+        ("Zárt szerves körforgás és TRL 3 ➔ TRL 7 ugrás: ", "A kapszula a kávézaccal együtt, szétválasztás nélkül komposztálható házi kerti talajban (20–25°C, NF T51-800: 20–30°C) és biogázüzemben (EN 13432), zéró mikroműanyaggal. 48 hónap alatt TRL 3-ról 100 000 db-os üzemi demonstrációig (TRL 7) jutunk.")
     ]
     populate_text_box(tb_abs, abs_items, font_size=9.5, bullet=True, space_after=5.0)
 
@@ -478,10 +478,10 @@ def build_all_slides():
     t3_shape = s3.shapes.add_table(7, 6, Inches(25 / 72), Inches(94 / 72), Inches(670 / 72), Inches(182 / 72))
     t3 = t3_shape.table
     t3.columns[0].width = Inches(25 / 72)
-    t3.columns[1].width = Inches(225 / 72)
-    t3.columns[2].width = Inches(55 / 72)
-    t3.columns[3].width = Inches(48 / 72)
-    t3.columns[4].width = Inches(48 / 72)
+    t3.columns[1].width = Inches(222 / 72)
+    t3.columns[2].width = Inches(52 / 72)
+    t3.columns[3].width = Inches(56 / 72)
+    t3.columns[4].width = Inches(46 / 72)
     t3.columns[5].width = Inches(269 / 72)
     t3_data = [
         ["#", "Résztvevő Hivatalos Neve", "Rövidítés", "Típus", "Ország", "Szerepkör az Értékláncban (Büdzsé | Erőforrás)"],
@@ -489,18 +489,18 @@ def build_all_slides():
         ["2", "MOL Magyar Olaj- és Gázipari Nyrt.", "MOL", "IND", "HU", "Ipari kompoundálás, 5-rétegű síkfólia koextrúzió (850k € | 100 PM)"],
         ["3", "Alfa Industry Csomagolástechnikai Kft.", "ALFA", "SME", "HU", "Temperált termoformáló szerszám, kapszula mélyhúzás (650k € | 90 PM)"],
         ["4", "RWTH Aachen University", "RWTH", "RTO", "DE", "Biodegradáció (EN 13432, NF T51-800), ökotoxicitás, LCA (750k € | 96 PM)"],
-        ["5", "Danimer Scientific / Bio-on European Facility", "BIO", "IND", "IT", "Mikrobiális PHA/PHBH fermentáció bio-hulladékból (550k € | 50 PM)"],
-        ["6", "PackCoffee Europe Barista Alliance", "PCOFF", "IND", "AT", "Ipari töltősori tesztek (400 db/perc), UH hegesztés (350k € | 40 PM)"]
+        ["5", "Danimer / Bio-on EU PHA Pilot (Kaneka PHBH ref.)", "BIO", "IND", "IT", "Mikrobiális PHA/PHBH fermentáció bio-hulladékból (550k € | 50 PM)"],
+        ["6", "PackCoffee Europe Barista Alliance", "PCOFF", "ASSO/IND", "AT", "Iparági szövetség, töltősori teszt (400 db/perc), UH hegesztés (350k € | 40 PM)"]
     ]
     for r_idx, row in enumerate(t3_data):
         for c_idx, val in enumerate(row):
             t3.cell(r_idx, c_idx).text = val
     style_table(t3, font_size=8.2)
 
-    create_card(s3, 25, 282, 670, 102, title="Konzorciumi Kapacitás (RTO: kutatóhely/egyetem | IND: ipari nagyvállalat | SME: KKV) és Alvállalkozás")
+    create_card(s3, 25, 282, 670, 102, title="Konzorciumi Kapacitás (RTO: kutatóhely | IND: nagyvállalat | SME: KKV | ASSO: szövetség) és Alvállalkozás")
     tb_c3 = s3.shapes.add_textbox(Inches(35 / 72), Inches(308 / 72), Inches(650 / 72), Inches(72 / 72))
     c3_items = [
-        ("Teljes értéklánc (4 ország, 6 partner): ", "2 kutatóegyetem (RTO: BME, RWTH), 3 ipari nagyvállalat (IND: MOL, Danimer, PackCoffee) és 1 szerszámgyártó KKV (SME: ALFA). Hazai arány: 60,7% (2,55M EUR, 334 PM)."),
+        ("Teljes értéklánc (4 ország, 6 partner, 4 szereplőtípus): ", "2 kutatóegyetem (RTO: BME, RWTH), 2 ipari nagyvállalat (IND: MOL, BIO/Kaneka-Danimer), 1 szerszámgyártó KKV (SME: ALFA) és 1 iparági szövetség/töltőüzem (ASSO/IND: PackCoffee). Hazai arány: 60,7% (2,55M EUR, 334 PM)."),
         ("Miért nincs logisztikai partner? (Subcontracting): ", "A Horizon Europe AGA Art. 6.2.B és 9.3 alapján a szállítás nem K+F tevékenység, így alvállalkozásként számolható el (elkerülve a 25% indokolatlan overheadet és a Criterion 3 pontlevonást).")
     ]
     populate_text_box(tb_c3, c3_items, font_size=8.4, bullet=True, space_after=2.0)
@@ -517,7 +517,7 @@ def build_all_slides():
     s4_l_items = [
         ("1. Hőstabil PHA/PHBH kompound: ", "Baktériumok által szintetizált polihidroxialkanoát mátrix optimalizálása orotinsav és talkum nukleálószerekkel."),
         ("2. 5-rétegű bio-barrier szerkezet: ", "Koextrudált záróréteg (OTR < 0,05 cm³/(kapszula·nap·bar)) a 12 hónapos aromastabilitásért védőgáz nélkül."),
-        ("3. 100% Biológiai lebonthatóság: ", "Házi komposztban (20–25°C, NF T51-800) és ipari komposztban (EN 13432) zéró mikroműanyag-képződéssel."),
+        ("3. 100% Biológiai lebonthatóság: ", "Házi komposztban (20–25°C, NF T51-800: 20–30°C) és ipari komposztban (EN 13432) zéró mikroműanyag-képződéssel."),
         ("4. Drop-in ipari kompatibilitás: ", "Nespresso-kompatibilis geometria (±0,1 mm) és 400 db/perc töltősori alkalmazhatóság.")
     ]
     populate_text_box(tb_s4_l, s4_l_items, font_size=8.8, bullet=True, space_after=3.0)
@@ -525,8 +525,8 @@ def build_all_slides():
     create_card(s4, 370, 96, 325, 240, title="Műszaki Ambíció és Túlmutatás a PLA-n")
     tb_s4_r = s4.shapes.add_textbox(Inches(380 / 72), Inches(124 / 72), Inches(305 / 72), Inches(206 / 72))
     s4_r_items = [
-        ("A jelenlegi PLA kapszulák kudarca: ", "A piaci bio-kapszulák többsége PLA alapú, amely alacsony üvegesedési hőmérséklete (Tg ≈ 55–60°C) miatt a forró extrakció során ellágyul, és kizárólag ipari komposztálóban (>58°C) bomlik le."),
-        ("Extrém kávéfőzési igénybevétel: ", "A PHACK kompound (HDT > 95–105°C, Tm > 140°C) alakstabil marad a 95°C feletti vízhőmérséklet és a 15–19 bar extrakciós nyomás alatt."),
+        ("A jelenlegi PLA kapszulák kudarca: ", "A piaci bio-kapszulák többsége PLA alapú, amely alacsony üvegesedési hőmérséklete (Tg ≈ 55–60°C, irodalmi: 55–65°C) miatt a forró extrakció során ellágyul, és csak ipari komposztálóban (>58°C) bomlik le."),
+        ("Extrém kávéfőzési igénybevétel: ", "A PHACK kompound (HDT > 95–105°C, Tm > 140°C) alakstabil marad a 90–95°C-os (93±2°C) vízhőmérséklet és a 15–19 bar (max. 19 bar) extrakciós nyomás alatt."),
         ("Zárt tápanyag-körforgás: ", "A nitrogénben, foszforban és káliumban gazdag kávézacc a kapszulával együtt közvetlenül a kerti komposztba vagy a MOHU barna kukába dobható.")
     ]
     populate_text_box(tb_s4_r, s4_r_items, font_size=8.8, bullet=True, space_after=3.5)
@@ -597,8 +597,8 @@ def build_all_slides():
     t7_data = [
         ["Szempont / Tulajdonság", "Hagyományos Al / PP", "PLA (Politejsav)", "PHACK – Módosított PHA / PHBH"],
         ["Alapanyag eredete", "Fosszilis kőolaj / Bauxit bányászat", "Ipari kukorica (élelmiszerrel verseng)", "100% bio-hulladék (UCO, melasz – bakteriális szintézis)"],
-        ["Hőállóság kávéfőzéskor", "Kiváló (>150°C), de energiaigényes", "Nem megfelelő (Tg ≈ 55–60°C, meglágyul, deformálódik)", "Kiváló (HDT > 95–105°C, 120°C-ig alakstabil, 15–19 bar)"],
-        ["Lebomlási képesség", "Nem bomlik le (több száz év)", "Csak ipari komposztálóban (>58°C); biogázban nem bomlik", "Házi komposzt (20–25°C, 6–12 hó, NF T51-800), biogáz (30–45 nap) és víz"],
+        ["Hőállóság kávéfőzéskor", "Kiváló (>150°C), de energiaigényes", "Nem megfelelő (Tg ≈ 55–60°C [55–65°C], meglágyul)", "Kiváló (HDT > 95–105°C, 120°C-ig stabil, 93±2°C / 15–19 bar)"],
+        ["Lebomlási képesség", "Nem bomlik le (több száz év)", "Csak ipari komposztálóban (>58°C); biogázban nem bomlik", "Házi komposzt (20–30°C, 6–12 hó, NF T51-800), biogáz (30–45 nap) és víz"],
         ["Gáz- és aromazárás (OTR)", "Kiváló OTR, de zacc miatt nem hasznosul", "Gyenge OTR (extra védőtasak kell)", "5-rétegű bio-barrier: OTR < 0,05 cm³/(kapszula·nap·bar)"],
         ["Életciklus CO₂e (LCA)", "Primer Al: ~15 kg CO₂e/kg (IAI 2022), kapszula ~1 g", "WUR 2023: a komposztálható kapszula GWP-je kissé az Al alatt van", "Cél: ≥25% CO₂e-csökkentés az Al-hoz képest (WP4 LCA)"]
     ]
@@ -648,15 +648,15 @@ def build_all_slides():
     t9.columns[1].width = Inches(220 / 72)
     t9.columns[2].width = Inches(240 / 72)
     t9_data = [
-        ["Specifikus Igények", "Várt Eredmények", "Tervezett Projektintézkedések (WP-k)"],
-        ["Kávépörkölők és márkák:\nMegfelelés a PPWR komposztálhatósági előírásainak milliárdos gépcsere nélkül.", "100%-ban Nespresso-kompatibilis, drop-in méretpontos (±0,1 mm) bio-kapszula és fedőfólia.", "Meglévő 400 db/perc sebességű töltősorokon futtatható kapszulageometria és 20–35 kHz ultrahangos hegesztés (WP3)."],
-        ["Csomagolóipari gyártók (KKV-k):\nHőstabil, gyorsan kristályosodó granulátum nagyüzemi mélyhúzáshoz.", "Termoformálási ciklusidő < 3,5 mp, falvastagság-tűrés ±3% (0,40 mm), zéró utózsugorodás.", "Orotinsavval nukleált PHA kompound receptúra és 60–70°C temperált szerszámtechnológia átadása (WP2, WP3)."],
-        ["Fogyasztók és hulladékkezelők:\nEgyszerű, szétválasztás nélküli higiénikus komposztálhatóság.", "Zéró mikroműanyag, 100% házi komposzt (NF T51-800) és biogázüzemi (EN 13432) lebomlás.", "„Hová dobjam?” lakossági edukációs kampány és akkreditált komposztálhatósági tanúsítás (WP4, WP5)."]
+        ["Specifikus Igények", "Várt Eredmények (KPI)", "Tervezett Projektintézkedések (WP-k)"],
+        ["Kávépörkölők és márkák:\nMegfelelés a PPWR komposztálhatósági előírásainak milliárdos gépcsere nélkül.", "Drop-in Nespresso-kompatibilis (±0,1 mm) bio-kapszula; KPI 1: < +10% önköltség-prémium; KPI 4: OTR < 0,05 cm³/(kapszula·nap·bar).", "Meglévő 400 db/perc sebességű töltősorokon futtatható kapszulageometria és 20–35 kHz ultrahangos hegesztés (WP3)."],
+        ["Csomagolóipari gyártók (KKV-k):\nHőstabil, gyorsan kristályosodó granulátum nagyüzemi mélyhúzáshoz.", "Termoformálási ciklusidő < 3,5 mp, falvastagság-tűrés ±3% (0,40 mm), HDT > 95–105°C, zéró utózsugorodás.", "Orotinsavval nukleált PHA kompound receptúra és 60–70°C temperált szerszámtechnológia átadása (WP2, WP3)."],
+        ["Fogyasztók és hulladékkezelők:\nEgyszerű, szétválasztás nélküli higiénikus komposztálhatóság.", "KPI 3: > 90% lebomlás házi komposztban (<12 hó, NF T51-800) és ipari/biogázüzemben (<6 hó, EN 13432), zéró mikroműanyag.", "„Hová dobjam?” lakossági edukációs kampány és akkreditált komposztálhatósági tanúsítás (WP4, WP5)."]
     ]
     for r_idx, row in enumerate(t9_data):
         for c_idx, val in enumerate(row):
             t9.cell(r_idx, c_idx).text = val
-    style_table(t9, font_size=8.8)
+    style_table(t9, font_size=8.6)
 
     create_card(s9, 25, 364, 670, 150, title="Rendszerszintű Ipari és Jogszabályi Illeszkedés (EU Green Deal & PPWR)")
     tb_c9 = s9.shapes.add_textbox(Inches(35 / 72), Inches(392 / 72), Inches(650 / 72), Inches(116 / 72))
@@ -676,10 +676,10 @@ def build_all_slides():
     t10.columns[1].width = Inches(230 / 72)
     t10.columns[2].width = Inches(245 / 72)
     t10_data = [
-        ["Érintett Célcsoport", "Projekt Kimenetel", "Hosszú Távú Rendszerszintű Hatás"],
-        ["Környezet és Klímavédelem:\nEurópai ökoszisztéma és talajok.", "Évi >500 millió bio-kapszula kiváltása és komposztálása a célrégióban 2030-ig.", "Évi ~500 tonna alumínium/műanyag kapszulahulladék megelőzése és ≥25% CO₂e lábnyom-csökkentés."],
-        ["Csomagolóipari KKV-k és Ipar:\nKelet-közép-európai gyártóbázis.", "Szabadalmaztatott, méretnövelhető PHA kompound és koextrúziós/termoformálási know-how.", "Önkormányzati lerakási díjak és EPR költségek drasztikus csökkentése; 120 új zöld munkahely."],
-        ["Hulladékgazdálkodók (MOHU):\nKomposztáló és biogázüzemek.", "Zaccos kapszulák közvetlen barna kukás gyűjtése, utóválogatás nélkül.", "Tiszta szerves frakció: értékes nitrogén-, foszfor- és káliumdús humusz és magasabb biometán-hozam."]
+        ["Érintett Célcsoport", "Projekt Kimenetel (KPI)", "Hosszú Távú Rendszerszintű Hatás (KPI)"],
+        ["Környezet és Klímavédelem:\nEurópai ökoszisztéma és talajok.", "KPI 2: > 2% piaci penetráció (évi >500 millió bio-kapszula kiváltása és komposztálása a célrégióban 2030-ig).", "Évi ~500 tonna alumínium/műanyag kapszulahulladék megelőzése és KPI 3: ≥25% CO₂e lábnyom-csökkentés (ISO 14040/44)."],
+        ["Csomagolóipari KKV-k és Ipar:\nKelet-közép-európai gyártóbázis.", "Szabadalmaztatott, méretnövelhető PHA kompound és koextrúziós/termoformálási know-how (KPI 1: < +10% önköltség).", "Önkormányzati lerakási díjak és EPR költségek drasztikus csökkentése; 120 új zöld munkahely."],
+        ["Hulladékgazdálkodók (MOHU):\nKomposztáló és biogázüzemek.", "Zaccos kapszulák közvetlen barna kukás gyűjtése, utóválogatás nélkül (KPI 3: > 90% biodegradáció).", "Tiszta szerves frakció: értékes nitrogén-, foszfor- és káliumdús humusz és magasabb biometán-hozam."]
     ]
     for r_idx, row in enumerate(t10_data):
         for c_idx, val in enumerate(row):
@@ -704,7 +704,7 @@ def build_all_slides():
         ("> 2% Piaci Penetráció & ≥25% CO₂e", "2. KPI: Piaci Részesedés és Klímahatás",
          "A projekt zárását követő 2 éven belül legalább 2%-os piaci penetráció a közép-európai prémium szegmensben (100 000 db TRL 7 demonstráció után), ≥25% CO₂e megtakarítási céllal bölcsőtől-sírig (Cradle-to-Grave) ISO 14040/44 LCA szerint."),
         ("> 90% Lebomlás (<12 hó / <6 hó)", "3. KPI: Szabványos Házi és Ipari Komposztálhatóság",
-         "Akkreditált EN 13432 és NF T51-800 szerinti >90%-os tömegveszteség és biodegradáció házi komposztban 12 hónapon (180–360 nap, 20–25°C), ipari komposztálóban pedig 6 hónapon (180 nap, 58°C) belül, zéró mikroműanyaggal."),
+         "Akkreditált EN 13432 és NF T51-800 szerinti >90%-os tömegveszteség és biodegradáció házi komposztban 12 hónapon (180–360 nap, 20–25°C [NF T51-800: 20–30°C]), ipari komposztálóban 6 hónapon (180 nap, 58°C) belül, zéró mikroműanyaggal."),
         ("OTR < 0,05 cm³/(kapszula·nap)", "4. KPI: Precíziós Oxigén- és Aromazárás",
          "5-rétegű koextrudált bio-barrier rétegrendszerrel (OTR < 0,05 cm³/(kapszula·nap·bar), WVTR < 1,0–2,0 g/(m²·nap)) biztosított 12 hónapos prémium kávé-aromastabilitás külső védőtasak nélkül.")
     ]
@@ -816,78 +816,108 @@ def build_all_slides():
     add_fig_to_slide(s14, fig14, 25, 340, 670, 174)
 
     # =========================================================================
-    # SLIDE 15: Megvalósítás - WP1 és WP2 Részletei (Layout 1 + DSC/TGA Chart)
+    # SLIDE 15: Megvalósítás - WP1 és WP2 Részletei (Layout 1 + Table 3.1b + Chart)
     # =========================================================================
-    s15 = setup_content_slide(15, "Megvalósítás", "Táblázat 3.1b Munkacsomagok részletei – WP1 és WP2 (Alapanyag és Kompoundálás)")
-    create_card(s15, 25, 96, 325, 266, title="WP1: Specifikáció & Szabályozás (RWTH | M1–M12 | 68 PM)")
-    tb_s15_l = s15.shapes.add_textbox(Inches(33 / 72), Inches(122 / 72), Inches(309 / 72), Inches(236 / 72))
-    s15_l_items = [
-        ("Partner PM bontás (68 PM): ", "RWTH: 28 PM | BME: 20 PM | MOL: 8 PM | BIO: 8 PM | ALFA: 4 PM."),
-        ("T1.1 Gépi és extrakciós tűrések: ", "400 db/perc töltősori toleranciák (±0,1 mm), 15–19 bar és 90–95°C határértékek (PackCoffee)."),
-        ("T1.2 Nyers PHA audit (GPC/NMR): ", "Danimer mikrobiális PHA/PHBH tételek molekulatömeg- és tisztasági ellenőrzése."),
-        ("T1.3 Jogszabályi megfelelés: ", "EU 10/2011 élelmiszer-kontakt (<10 mg/dm²) és EU PPWR 9. cikk audit."),
-        ("Kimenet: ", "D1.1 Követelményspecifikáció (M12, R, PU) ➔ MS1 mérföldkő.")
-    ]
-    populate_text_box(tb_s15_l, s15_l_items, font_size=8.3, bullet=True, space_after=2.5)
+    def add_wp_table_31b(slide, left_pt, top_pt, width_pt, height_pt, col0_w_pt, rows_data, base_font=7.8, max_font=8.8):
+        t_shape = slide.shapes.add_table(
+            len(rows_data), 2,
+            Inches(left_pt / 72), Inches(top_pt / 72),
+            Inches(width_pt / 72), Inches(height_pt / 72)
+        )
+        tbl = t_shape.table
+        tbl.columns[0].width = Inches(col0_w_pt / 72)
+        tbl.columns[1].width = Inches((width_pt - col0_w_pt) / 72)
+        for r_idx, (k_txt, v_txt) in enumerate(rows_data):
+            tbl.cell(r_idx, 0).text = k_txt
+            tbl.cell(r_idx, 1).text = v_txt
+        fs = style_table(tbl, font_size=base_font, max_font=max_font)
+        for r_idx in range(1, len(rows_data)):
+            c0 = tbl.cell(r_idx, 0)
+            c0.fill.solid()
+            c0.fill.fore_color.rgb = COLOR_CARD_TITLE_BG
+            for p in c0.text_frame.paragraphs:
+                for run in p.runs:
+                    set_font(run, size=fs, bold=True, color=COLOR_BME_NAVY)
+            c1 = tbl.cell(r_idx, 1)
+            raw_lines = rows_data[r_idx][1].split("\n")
+            tf1 = c1.text_frame
+            tf1.clear()
+            tf1.word_wrap = True
+            tf1.vertical_anchor = MSO_ANCHOR.MIDDLE
+            tf1.margin_left = tf1.margin_right = Inches(4 / 72)
+            tf1.margin_top = tf1.margin_bottom = Inches(2 / 72)
+            for l_i, line in enumerate(raw_lines):
+                p = tf1.paragraphs[0] if l_i == 0 else tf1.add_paragraph()
+                p.space_after = Pt(1.5)
+                if ":" in line and (line.startswith("▸") or line.startswith("T") or line.startswith("D")):
+                    head, tail = line.split(":", 1)
+                    r0 = p.add_run()
+                    r0.text = head + ":"
+                    set_font(r0, size=fs, bold=True, color=COLOR_BME_NAVY)
+                    _append_rich_runs(p, tail, fs, base_color=COLOR_DARK_TEXT, hl_color=COLOR_BME_BLUE)
+                else:
+                    _append_rich_runs(p, line, fs, base_color=COLOR_DARK_TEXT, hl_color=COLOR_BME_BLUE)
+        return tbl
 
-    create_card(s15, 370, 96, 325, 266, title="WP2: PHA Kompoundálás & Receptúra (BME | M6–M24 | 144 PM)")
-    tb_s15_r = s15.shapes.add_textbox(Inches(378 / 72), Inches(122 / 72), Inches(309 / 72), Inches(236 / 72))
-    s15_r_items = [
-        ("Partner PM bontás (144 PM): ", "BME: 80 PM | MOL: 36 PM | RWTH: 16 PM | BIO: 12 PM."),
-        ("T2.1 Orotinsavas nukleálás: ", "0,5–1,0% orotinsav, talkum és citrát bio-lágyítók szűrése (HDT > 95–105°C)."),
-        ("T2.2 Kétcsigás kompoundálás: ", "Alacsony nyírású csigaprofil (165–175°C) a β-eliminációs bomlás megelőzésére."),
-        ("T2.3 Reológia & DSC/TGA/DMA: ", "Kristályosodási kinetika (t₁/₂ < 8 mp); 50 kg granulátum és 1 000 db labor kapszula."),
-        ("Kimenet: ", "D2.1 PHA kompound receptúra (M24, R, PU) ➔ MS2 mérföldkő.")
+    s15 = setup_content_slide(15, "Megvalósítás", "Táblázat 3.1b Munkacsomagok részletei – WP1 és WP2 (Alapanyag és Kompoundálás)")
+    wp1_rows = [
+        ("Táblázat 3.1b – WP1", "WP1: Igényfelmérés, specifikáció és szabályozás (M1–M12 | 68 PM)"),
+        ("Vezető & Résztvevők", "Vezető: 4-RWTH (26 PM) | Partnerek: 1-BME (18), 2-MOL (8), 3-ALFA (6), 5-BIO (6), 6-PCOFF (4)"),
+        ("Célok (Objectives)", "Nespresso-kompatibilis gépi tűrések (±0,1 mm), nyers PHA/PHBH tisztasági és EU 10/2011 + PPWR előírások rögzítése."),
+        ("Feladatok (T1.1–T1.3)", "▸ T1.1 Gépi és extrakciós tűrések: 400 db/perc töltősori tűrés (±0,1 mm), 90–95°C (93±2°C), 15–19 bar (PackCoffee).\n▸ T1.2 Nyers PHA audit (GPC/NMR): Mikrobiális PHA/PHBH tételek molekulatömeg- és tisztasági vizsgálata (Danimer/BIO).\n▸ T1.3 Jogszabályi megfelelés: EU 10/2011 migrációs (<10 mg/dm²) és EU PPWR 9. cikk (2) a) komposztálhatósági audit."),
+        ("Eredmény & Mérföldkő", "D1.1 Követelményspecifikáció (M12, R, PU) ➔ MS1 mérföldkő (M12)")
     ]
-    populate_text_box(tb_s15_r, s15_r_items, font_size=8.3, bullet=True, space_after=2.5)
+    add_wp_table_31b(s15, 25, 96, 325, 266, 86, wp1_rows, base_font=7.6, max_font=8.4)
+
+    wp2_rows = [
+        ("Táblázat 3.1b – WP2", "WP2: PHA kompoundálás és receptúrafejlesztés (M6–M24 | 144 PM)"),
+        ("Vezető & Résztvevők", "Vezető: 1-BME (78 PM) | Partnerek: 2-MOL (30), 5-BIO (14), 4-RWTH (12), 3-ALFA (10)"),
+        ("Célok (Objectives)", "Hőstabil (HDT > 95–105°C, Tm > 140°C), gyorsan kristályosodó (t₁/₂ < 8 mp) PHA/PHBH kompound kifejlesztése."),
+        ("Feladatok (T2.1–T2.3)", "▸ T2.1 Orotinsavas nukleálás: 0,5–1,0% orotinsav, talkum és citrát bio-lágyítók szűrése (HDT > 95–105°C).\n▸ T2.2 Kétcsigás kompoundálás: Alacsony nyírású csigaprofil (165–175°C) a β-eliminációs bomlás megelőzésére.\n▸ T2.3 Reológia & DSC/TGA/DMA: Kristályosodási kinetika (t₁/₂ < 8 mp); 50 kg granulátum és 1 000 db labor kapszula."),
+        ("Eredmény & Mérföldkő", "D2.1 PHA kompound receptúra (M24, R, PU) ➔ MS2 mérföldkő (M24)")
+    ]
+    add_wp_table_31b(s15, 370, 96, 325, 266, 86, wp2_rows, base_font=7.6, max_font=8.4)
 
     fig15 = make_fig_slide15_wp12_kinetics()
     add_fig_to_slide(s15, fig15, 25, 368, 670, 146)
 
     # =========================================================================
-    # SLIDE 16: Megvalósítás - WP3 Részletei (Layout 1 + Cross-Section Diagram)
+    # SLIDE 16: Megvalósítás - WP3 Részletei (Layout 1 + Table 3.1b + Diagram)
     # =========================================================================
     s16 = setup_content_slide(16, "Megvalósítás", "Táblázat 3.1b Munkacsomagok részletei – WP3 (Síkfólia koextrúzió és termoformálás)")
-    create_card(s16, 25, 96, 670, 238, title="WP3: Síkfólia Koextrúzió, Temperált Termoformálás és Töltősori Pilot (MOL | M18–M36 | 136 PM)")
-    tb_s16 = s16.shapes.add_textbox(Inches(35 / 72), Inches(124 / 72), Inches(650 / 72), Inches(204 / 72))
-    s16_items = [
-        ("Vezető és partnerek: ", "MOL Nyrt. (48 PM), Alfa Industry Kft. (64 PM), BME (12 PM), Danimer (6 PM), PackCoffee (6 PM) – Összesen: 136 PM."),
-        ("T3.1 5-rétegű bio-barrier síkfólia koextrúziója (MOL): ", "0,40 mm (380–400 µm, ±3% tűrés) vastag síkfólia gyártása (PHA 180 µm / Bio-Tie 15 µm / Nanocellulóz vagy PGA barrier 20 µm / Bio-Tie 15 µm / PHA 150 µm) temperált chill-roll hengerekkel."),
-        ("T3.2 Temperált szerszámos precíziós termoformálás (ALFA): ", "Többfészkes, 60–70°C-ra temperált termoformáló szerszám tervezése és mélyhúzás (<3,5 mp ciklusidő, ±0,1 mm kamratűrés, utózsugorodás-mentes kristályosítás)."),
-        ("T3.3 100 000 db-os demonstrációs gyártás és UH hegesztés (PackCoffee): ", "100 000 db kapszula ipari próbatöltése (400 db/perc) és 20–35 kHz-es ultrahangos bio-fedőfólia hegesztése ➔ D3.1 (M36, SEN), D3.2 (M36, DEM, PU) & MS3.")
+    wp3_rows = [
+        ("Táblázat 3.1b – Munkacsomag", "WP3: Síkfólia koextrúzió, temperált termoformálás és töltősori pilot (M18–M36 | 136 PM)"),
+        ("Vezető & Résztvevők (PM)", "Vezető: 2-MOL Nyrt. (56 PM) | Partnerek: 3-ALFA (56 PM), 1-BME (12 PM), 6-PCOFF (8 PM), 5-BIO (4 PM) – Összesen: 136 PM"),
+        ("Célok (Objectives)", "0,40 mm-es 5-rétegű bio-barrier síkfólia (OTR < 0,05) ipari koextrúziója, <3,5 mp ciklusidejű temperált termoformálás és 100 000 db kapszula pilot gyártása (TRL 6)."),
+        ("Munkaleírás és feladatok\n(T3.1 – T3.3)", "▸ T3.1 5-rétegű bio-barrier síkfólia koextrúziója (MOL): 0,40 mm (380–400 µm, ±3% tűrés) síkfólia gyártása (PHA 180 µm / Bio-Tie 15 µm / Nanocellulóz vagy PGA barrier 20 µm / Bio-Tie 15 µm / PHA 150 µm) temperált chill-roll hengerekkel.\n▸ T3.2 Temperált szerszámos precíziós termoformálás (ALFA): Többfészkes, 60–70°C-ra temperált termoformáló szerszám tervezése és mélyhúzás (<3,5 mp ciklusidő, ±0,1 mm kamratűrés, utózsugorodás-mentes kristályosítás).\n▸ T3.3 100 000 db-os demonstrációs gyártás és UH hegesztés (PackCoffee): 100 000 db kapszula ipari próbatöltése (400 db/perc) és 20–35 kHz-es ultrahangos bio-fedőfólia hegesztése."),
+        ("Eredmények & Mérföldkő", "D3.1 Koextrúziós és termoformálási protokoll (M36, R, SEN) | D3.2 100 000 db demonstrációs kapszula (M36, DEM, PU) ➔ MS3 (M36)")
     ]
-    populate_text_box(tb_s16, s16_items, font_size=8.9, bullet=True, space_after=3.5)
+    add_wp_table_31b(s16, 25, 96, 670, 238, 128, wp3_rows, base_font=8.0, max_font=8.9)
 
     fig16 = make_fig_slide16_wp3_architecture()
     add_fig_to_slide(s16, fig16, 25, 340, 670, 174)
 
     # =========================================================================
-    # SLIDE 17: Megvalósítás - WP4 és WP5 Részletei (Layout 1)
+    # SLIDE 17: Megvalósítás - WP4 és WP5 Részletei (Layout 1 + Table 3.1b)
     # =========================================================================
     s17 = setup_content_slide(17, "Megvalósítás", "Táblázat 3.1b Munkacsomagok részletei – WP4 és WP5 (Validáció és Menedzsment)")
-    create_card(s17, 25, 96, 325, 418, title="WP4: Biodegradáció, Élelmiszerbiztonság & LCA (RWTH)")
-    tb_s17_l = s17.shapes.add_textbox(Inches(35 / 72), Inches(126 / 72), Inches(305 / 72), Inches(380 / 72))
-    s17_l_items = [
-        ("Vezető és futamidő: ", "RWTH Aachen University | M24 – M44 (96 PM)"),
-        ("Fő célkitűzés: ", "Akkreditált ipari, házi és biogázüzemi lebonthatósági tanúsítás, ökotoxikológia és bölcsőtől-sírig LCA."),
-        ("T4.1 Biodegradáció (EN 13432, NF T51-800, ISO 14855): ", "Respirometriás CO₂-fejlődés és dezintegráció mérése házi komposztban (20–25°C, <12 hó), ipari komposztban (58°C, <6 hó) és anaerob biogázüzemben (30–45 nap)."),
-        ("T4.2 Ökotoxikológia és élelmiszer-migráció: ", "OECD 208 csíranövény- és földigiliszta-toxicitási tesztek a kávézaccos komposzton; EU 10/2011 kioldódási vizsgálat 95°C/19 bar extrakció után."),
-        ("T4.3 Teljes ISO 14040/14044 LCA: ", "Bölcsőtől-sírig (Cradle-to-Grave) szén-dioxid lábnyom számítás (cél: ≥25% CO₂e csökkenés az alumínium kapszulához képest)."),
-        ("Eredmények: ", "D4.1 Biodegradációs jelentés (M44, R, PU); D4.2 Teljes LCA hatástanulmány (M44, R, PU).")
+    wp4_rows = [
+        ("Táblázat 3.1b – WP4", "WP4: Biodegradáció, élelmiszerbiztonság és LCA elemzés (M24–M44 | 96 PM)"),
+        ("Vezető & Résztvevők", "Vezető: 4-RWTH Aachen (42 PM) | Partnerek: 5-BIO (18 PM), 6-PCOFF (16 PM), 3-ALFA (12 PM), 1-BME (8 PM)"),
+        ("Fő célkitűzés\n(Objectives)", "Akkreditált ipari (EN 13432), házi (NF T51-800) és biogázüzemi lebonthatósági tanúsítás, OECD 208 ökotoxikológia, EU 10/2011 migráció és bölcsőtől-sírig ISO 14040/44 LCA (TRL 7)."),
+        ("Munkaleírás és feladatok\n(T4.1 – T4.3)", "▸ T4.1 Biodegradáció (EN 13432, NF T51-800, ISO 14855): Respirometriás CO₂-fejlődés és dezintegráció mérése házi komposztban (20–25°C [NF T51-800: 20–30°C], <12 hó), ipari komposztban (58°C, <6 hó) és anaerob biogázüzemben (30–45 nap).\n▸ T4.2 Ökotoxikológia és élelmiszer-migráció: OECD 208 csíranövény- és földigiliszta-toxicitási tesztek a kávézaccos komposzton; EU 10/2011 kioldódási vizsgálat (<10 mg/dm²) 95°C/19 bar extrakció után.\n▸ T4.3 Teljes ISO 14040/14044 LCA: Bölcsőtől-sírig (Cradle-to-Grave) szén-dioxid lábnyom számítás (cél: ≥25% CO₂e csökkenés az alumínium kapszulához képest)."),
+        ("Szállítandó eredmények\n(Deliverables)", "D4.1 Akkreditált biodegradációs és ökotoxicitási jelentés (M44, R, PU)\nD4.2 Teljes bölcsőtől-sírig ISO 14040/44 LCA hatástanulmány (M44, R, PU)")
     ]
-    populate_text_box(tb_s17_l, s17_l_items, font_size=8.9, bullet=True, space_after=4.0)
+    add_wp_table_31b(s17, 25, 96, 325, 418, 88, wp4_rows, base_font=8.0, max_font=8.9)
 
-    create_card(s17, 370, 96, 325, 418, title="WP5: Projektmenedzsment, IPR & Hasznosítás (BME)")
-    tb_s17_r = s17.shapes.add_textbox(Inches(380 / 72), Inches(126 / 72), Inches(305 / 72), Inches(380 / 72))
-    s17_r_items = [
-        ("Vezető és futamidő: ", "BME Polimertechnika Tanszék | M1 – M48 (76 PM)"),
-        ("Fő célkitűzés: ", "A konzorcium operatív, pénzügyi és jogi irányítása, kockázatkezelés, IPR védelem és disszemináció."),
-        ("T5.1 Konzorciumi irányítás és minőségbiztosítás: ", "Steering Committee negyedéves ülések, Horizon Europe pénzügyi jelentések, etikai és Stage-Gate monitoring."),
-        ("T5.2 Szellemi tulajdon (IPR) és üzleti hasznosítás: ", "Konzorciumi megállapodás (CA), közös európai szabadalom (EPO) a PHA kompoundra és licencmodell kidolgozása."),
-        ("T5.3 Disszemináció és „Hová dobjam?” kampány: ", "Projekt weboldal, DMP, 5 db Q1 Open Access publikáció, CEN szabványosítás és lakossági edukáció."),
-        ("Eredmények: ", "D5.1 Honlap és disszeminációs terv (M6, DEC, PU); D5.2 Záró technikai és pénzügyi jelentés (M48, R, PU).")
+    wp5_rows = [
+        ("Táblázat 3.1b – WP5", "WP5: Projektmenedzsment, IPR, disszemináció és hasznosítás (M1–M48 | 76 PM)"),
+        ("Vezető & Résztvevők", "Vezető: 1-BME (28 PM, Koord.) | Partnerek: 4-RWTH (16 PM), 6-PCOFF (12 PM), 5-BIO (8 PM), 2-MOL (6 PM), 3-ALFA (6 PM)"),
+        ("Fő célkitűzés\n(Objectives)", "A konzorcium operatív, pénzügyi és jogi irányítása (40 PM), minőségbiztosítás, IPR védelem, szabványosítás és tudományos/lakossági disszemináció (36 PM)."),
+        ("Munkaleírás és feladatok\n(T5.1 – T5.3)", "▸ T5.1 Konzorciumi irányítás és minőségbiztosítás: Steering Committee negyedéves ülések, Horizon Europe pénzügyi jelentések, etikai és Stage-Gate (MS1–MS3) monitoring.\n▸ T5.2 Szellemi tulajdon (IPR) és üzleti hasznosítás: Konzorciumi megállapodás (CA), közös európai szabadalom (EPO) a nukleált PHA kompoundra és licencmodell kidolgozása.\n▸ T5.3 Disszemináció, képzés és „Hová dobjam?” kampány: Projekt weboldal, FAIR DMP, 5 db Q1 Open Access publikáció, CEN/TC 249 szabványosítás, MSc tananyag és lakossági edukáció."),
+        ("Szállítandó eredmények\n(Deliverables)", "D5.1 Honlap, DMP és disszeminációs terv (M6, DEC, PU)\nD5.2 Záró technikai, IPR és pénzügyi jelentés (M48, R, PU)")
     ]
-    populate_text_box(tb_s17_r, s17_r_items, font_size=8.9, bullet=True, space_after=4.0)
+    add_wp_table_31b(s17, 370, 96, 325, 418, 88, wp5_rows, base_font=8.0, max_font=8.9)
 
     # =========================================================================
     # SLIDE 18: Megvalósítás - Mérföldkövek (Layout 1)
@@ -999,7 +1029,7 @@ def build_all_slides():
     # SLIDE 21: Megvalósítás - Gantt Ütemterv (Layout 1)
     # =========================================================================
     s21 = setup_content_slide(21, "Megvalósítás", "3.1 A megvalósítás minősége és hatékonysága – 48 hónapos Gantt ütemterv")
-    t21_shape = s21.shapes.add_table(6, 5, Inches(25 / 72), Inches(94 / 72), Inches(670 / 72), Inches(228 / 72))
+    t21_shape = s21.shapes.add_table(6, 5, Inches(25 / 72), Inches(94 / 72), Inches(670 / 72), Inches(198 / 72))
     t21 = t21_shape.table
     t21.columns[0].width = Inches(230 / 72)
     t21.columns[1].width = Inches(110 / 72)
@@ -1007,17 +1037,17 @@ def build_all_slides():
     t21.columns[3].width = Inches(110 / 72)
     t21.columns[4].width = Inches(110 / 72)
 
-    headers_gantt = ["Munkacsomag / Fő Tevékenység", "1. Év (M1 – M12)", "2. Év (M13 – M24)", "3. Év (M25 – M36)", "4. Év (M37 – M48)"]
+    headers_gantt = ["Munkacsomag & Részfeladatok (T1.1–T5.3)", "1. Év (M1 – M12)", "2. Év (M13 – M24)", "3. Év (M25 – M36)", "4. Év (M37 – M48)"]
     for c, h in enumerate(headers_gantt):
         t21.cell(0, c).text = h
-    style_table(t21, font_size=8.8, max_font=10.5)
+    style_table(t21, font_size=8.2, max_font=9.4)
 
     gantt_rows = [
-        ("WP1: Specifikáció & Szabályozás (RWTH, 68 PM)", [("ACTIVE", "M1–M12: D1.1 & MS1"), ("NONE", "–"), ("NONE", "–"), ("NONE", "–")]),
-        ("WP2: PHA Kompoundálás (BME, 144 PM)", [("PLAN", "M6–M12: Nukleálás"), ("ACTIVE", "M13–M24: D2.1 & MS2"), ("NONE", "–"), ("NONE", "–")]),
-        ("WP3: Síkfólia & Termoformálás (MOL/ALFA, 136 PM)", [("NONE", "–"), ("PLAN", "M18–M24: Fólia kísérlet"), ("ACTIVE", "M25–M36: 100k db & MS3"), ("NONE", "–")]),
-        ("WP4: Biodegradáció & LCA (RWTH, 96 PM)", [("NONE", "–"), ("NONE", "–"), ("PLAN", "M24–M36: Előtesztek"), ("ACTIVE", "M37–M44: D4.1 & D4.2")]),
-        ("WP5: Menedzsment & Disszemináció (BME, 76 PM)", [("ACTIVE", "D5.1: Honlap & DMP"), ("ACTIVE", "IPR & Szabadalom"), ("ACTIVE", "CEN & Workshopok"), ("ACTIVE", "D5.2: Zárójelentés")])
+        ("WP1: Specifikáció & Szabályozás (RWTH, 68 PM)\nT1.1 Tűrések · T1.2 PHA audit · T1.3 PPWR", [("ACTIVE", "M1–M12: T1.1–T1.3\n➔ D1.1 & MS1"), ("NONE", "–"), ("NONE", "–"), ("NONE", "–")]),
+        ("WP2: PHA Kompoundálás (BME, 144 PM)\nT2.1 Nukleálás · T2.2 Extrúzió · T2.3 50 kg/1k db", [("PLAN", "M6–M12: T2.1–T2.2"), ("ACTIVE", "M13–M24: T2.2–T2.3\n➔ D2.1 & MS2"), ("NONE", "–"), ("NONE", "–")]),
+        ("WP3: Síkfólia & Termoformálás (MOL/ALFA, 136 PM)\nT3.1 5-rétegű fólia · T3.2 Szerszám · T3.3 100k db", [("NONE", "–"), ("PLAN", "M18–M24: T3.1–T3.2"), ("ACTIVE", "M25–M36: T3.1–T3.3\n➔ D3.1–3.2 & MS3"), ("NONE", "–")]),
+        ("WP4: Biodegradáció & LCA (RWTH, 96 PM)\nT4.1 EN 13432 · T4.2 Migráció · T4.3 LCA", [("NONE", "–"), ("NONE", "–"), ("PLAN", "M24–M36: T4.1–T4.2"), ("ACTIVE", "M37–M44: T4.1–T4.3\n➔ D4.1 & D4.2")]),
+        ("WP5: Menedzsment & Disszemináció (BME, 76 PM)\nT5.1 Irányítás · T5.2 IPR/EPO · T5.3 Q1/CEN", [("ACTIVE", "T5.1 & T5.3\n➔ D5.1 (M6)"), ("ACTIVE", "T5.1–T5.3:\nIPR & EPO"), ("ACTIVE", "T5.1–T5.3:\nCEN & Workshop"), ("ACTIVE", "T5.1–T5.3\n➔ D5.2 (M48)")])
     ]
 
     for r_idx, (wp_title, quarters) in enumerate(gantt_rows, 1):
@@ -1025,7 +1055,9 @@ def build_all_slides():
         cell0.text = wp_title
         cell0.fill.solid()
         cell0.fill.fore_color.rgb = COLOR_CARD_TITLE_BG
-        set_font(cell0.text_frame.paragraphs[0].runs[0], size=9.4, bold=True, color=COLOR_BME_NAVY)
+        for p_idx, p in enumerate(cell0.text_frame.paragraphs):
+            for r in p.runs:
+                set_font(r, size=8.4 if p_idx == 0 else 7.6, bold=(p_idx == 0), color=COLOR_BME_NAVY if p_idx == 0 else COLOR_DARK_TEXT)
 
         for q_idx, (status, label) in enumerate(quarters, 1):
             cell = t21.cell(r_idx, q_idx)
@@ -1033,45 +1065,45 @@ def build_all_slides():
             cell.fill.solid()
             tf = cell.text_frame
             tf.vertical_anchor = MSO_ANCHOR.MIDDLE
-            p = tf.paragraphs[0]
-            p.alignment = PP_ALIGN.CENTER
-
-            if status == "ACTIVE":
-                cell.fill.fore_color.rgb = COLOR_BME_NAVY
-                set_font(p.runs[0], size=9.0, bold=True, color=COLOR_WHITE)
-            elif status == "PLAN":
-                cell.fill.fore_color.rgb = COLOR_GANTT_PLAN
-                set_font(p.runs[0], size=9.0, bold=True, color=COLOR_BME_NAVY)
-            else:
-                cell.fill.fore_color.rgb = COLOR_ROW_ALT
-                set_font(p.runs[0], size=9.0, bold=False, color=COLOR_MUTED_TEXT)
+            for p in tf.paragraphs:
+                p.alignment = PP_ALIGN.CENTER
+                for r in p.runs:
+                    if status == "ACTIVE":
+                        cell.fill.fore_color.rgb = COLOR_BME_NAVY
+                        set_font(r, size=8.2, bold=True, color=COLOR_WHITE)
+                    elif status == "PLAN":
+                        cell.fill.fore_color.rgb = COLOR_GANTT_PLAN
+                        set_font(r, size=8.2, bold=True, color=COLOR_BME_NAVY)
+                    else:
+                        cell.fill.fore_color.rgb = COLOR_ROW_ALT
+                        set_font(r, size=8.2, bold=False, color=COLOR_MUTED_TEXT)
 
     fig21 = make_fig_slide21_gantt_timeline()
-    add_fig_to_slide(s21, fig21, 25, 330, 670, 184)
+    add_fig_to_slide(s21, fig21, 25, 298, 670, 216)
 
     # =========================================================================
     # SLIDE 22: Megvalósítás - Költségvetés és Erőforrások (100% Parity + Chart)
     # =========================================================================
     s22 = setup_content_slide(22, "A projekt költségei",     "Konzorciumi költségvetés (4,2M EUR) és Táblázat 3.1f Emberi erőforrás megoszlás (520 PM)")
-    create_card(s22, 25, 96, 325, 244, title="Költségvetési kategóriák (4,2M EUR)")
-    t22_l_shape = s22.shapes.add_table(7, 3, Inches(33 / 72), Inches(124 / 72), Inches(309 / 72), Inches(208 / 72))
+    create_card(s22, 25, 96, 325, 244, title="Költségvetési kategóriák és indoklás (4,2M EUR)")
+    t22_l_shape = s22.shapes.add_table(7, 3, Inches(31 / 72), Inches(124 / 72), Inches(313 / 72), Inches(210 / 72))
     t22_l = t22_l_shape.table
-    t22_l.columns[0].width = Inches(118 / 72)
-    t22_l.columns[1].width = Inches(38 / 72)
-    t22_l.columns[2].width = Inches(153 / 72)
+    t22_l.columns[0].width = Inches(105 / 72)
+    t22_l.columns[1].width = Inches(34 / 72)
+    t22_l.columns[2].width = Inches(174 / 72)
     t22_l_data = [
-        ["Költségkategória", "Arány", "Összeg (€) & Tartalom"],
-            ["Személyi jellegű költségek", "50%", "2 080 000 € (520 PM × 4 000 €/PM)"],
-            ["Utazás és ellátás", "3%", "130 000 € (ülések, konferenciák)"],
-            ["Felszerelés / Eszközök", "16%", "670 000 € (szerszám, műszer)"],
-            ["Egyéb áru, munka, szolgáltatás", "11%", "480 000 € (PHA, tesztek, alvállalkozás)"],
-            ["Indirekt költség (25% átalány)", "20%", "840 000 € (HE overhead)"],
-            ["Összesen (100% EU RIA)", "100%", "4 200 000 € (4,2M EUR)"]
-        ]
+        ["Költségkategória", "Arány", "Összeg (€) & Indoklás (Sablon 14. dia)"],
+        ["Személyi jellegű költségek", "50%", "2 080 000 € (520 PM × 4 000 €/PM kutatói és mérnöki bér)"],
+        ["Utazás és ellátás", "3%", "130 000 € (8 konzorciumi ülés, 6 EU konferencia, pilot-utak)"],
+        ["Felszerelés / Eszközök", "16%", "670 000 € (5-rétegű fej, 60–70°C szerszám, UH-fej amortizáció)"],
+        ["Egyéb áru, munka, szolgáltatás", "11%", "480 000 € (2,5 t PHA, EN 13432 audit, logisztikai alvállalkozás)"],
+        ["Indirekt költség (25% átalány)", "20%", "840 000 € (HE 25% rezsiátalány a 3,36M € közvetlen költségre)"],
+        ["Összesen (100% EU RIA)", "100%", "4 200 000 € (4,2M EUR – 100% EU finanszírozás)"]
+    ]
     for r_idx, row in enumerate(t22_l_data):
         for c_idx, val in enumerate(row):
             t22_l.cell(r_idx, c_idx).text = val
-    style_table(t22_l, font_size=8.0, max_font=9.5)
+    style_table(t22_l, font_size=7.6, max_font=8.6)
 
     create_card(s22, 358, 96, 337, 244, title="Táblázat 3.1f Emberi erőforrás (PM / WP) és büdzsé")
     t22_r_shape = s22.shapes.add_table(8, 8, Inches(364 / 72), Inches(124 / 72), Inches(325 / 72), Inches(200 / 72))
@@ -1081,12 +1113,12 @@ def build_all_slides():
         t22_r.columns[c_i].width = Inches(w_val / 72)
     t22_r_data = [
         ["Partner", "WP1", "WP2", "WP3", "WP4", "WP5", "Össz. PM", "Büdzsé (€)"],
-        ["1. BME (HU)", "20", "80", "12", "8", "24", "144 PM", "1 050 000 €"],
-        ["2. MOL (HU)", "8", "36", "48", "–", "8", "100 PM", "850 000 €"],
-        ["3. ALFA (HU)", "4", "–", "64", "6", "16", "90 PM", "650 000 €"],
-        ["4. RWTH (DE)", "28", "16", "–", "44", "8", "96 PM", "750 000 €"],
-        ["5. BIO (IT)", "8", "12", "6", "16", "8", "50 PM", "550 000 €"],
-        ["6. PCOFF (AT)", "–", "–", "6", "22", "12", "40 PM", "350 000 €"],
+        ["1. BME (HU)", "18", "78", "12", "8", "28", "144 PM", "1 050 000 €"],
+        ["2. MOL (HU)", "8", "30", "56", "–", "6", "100 PM", "850 000 €"],
+        ["3. ALFA (HU)", "6", "10", "56", "12", "6", "90 PM", "650 000 €"],
+        ["4. RWTH (DE)", "26", "12", "–", "42", "16", "96 PM", "750 000 €"],
+        ["5. BIO (IT)", "6", "14", "4", "18", "8", "50 PM", "550 000 €"],
+        ["6. PCOFF (AT)", "4", "–", "8", "16", "12", "40 PM", "350 000 €"],
         ["Összesen", "68", "144", "136", "96", "76", "520 PM", "4 200 000 €"]
     ]
     for r_idx, row in enumerate(t22_r_data):

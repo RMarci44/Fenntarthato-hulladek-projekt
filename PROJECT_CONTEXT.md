@@ -49,8 +49,8 @@ Ez a dokumentum rögzíti a **Fenntartható hulladékgazdálkodás** MSc kurzus 
 | **2** | **MOL Nyrt.** | IND | HU | Ipari kompoundálás, síkfólia extrúzió, méretnövelés | 850 000 EUR (100 PM) |
 | **3** | **Alfa Industry Kft.** | SME | HU | Szerszámkészítés, termoformálás, prototípus és kisszériás gyártás | 650 000 EUR (90 PM) |
 | **4** | **RWTH Aachen University** | RTO | DE | Biodegradációs vizsgálatok (EN 13432), talajtoxicitás, teljes LCA | 750 000 EUR (96 PM) |
-| **5** | **Danimer Scientific / Bio-on European Facility** | IND | IT | Ipari fermentációs PHA alapanyag előállítása bio-hulladékból | 550 000 EUR (50 PM) |
-| **6** | **PackCoffee Europe Barista Alliance** | IND | AT | Ipari töltősori tesztek, ultrahangos hegesztés, barista validáció | 350 000 EUR (40 PM) |
+| **5** | **Danimer / Bio-on EU PHA Pilot (Kaneka PHBH ref.)** | IND | IT | Ipari fermentációs PHA/PHBH alapanyag előállítása bio-hulladékból | 550 000 EUR (50 PM) |
+| **6** | **PackCoffee Europe Barista Alliance** | ASSO/IND | AT | Iparági szövetség, töltősori tesztek (400 db/perc), UH hegesztés, barista validáció | 350 000 EUR (40 PM) |
 
 > **Fontos oktatói szempont (`info.txt`):** Logisztikai céget tilos partnerként bevonni (nincs érdemi K+F szerepe); ha szükséges, alvállalkozóként jelenhet meg.
 

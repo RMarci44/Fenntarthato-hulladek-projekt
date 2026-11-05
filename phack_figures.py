@@ -159,13 +159,13 @@ def make_fig_slide4_capsule_barrier():
     fig = new_fig(W, H)
     ov = overlay(fig, W, H)
 
-    ftitle(fig, W, H, 168, 11, "Hőállóság 95°C / 15–19 bar extrakció alatt", 10.5)
+    ftitle(fig, W, H, 168, 11, "Hőállóság 90–95°C (93±2°C) / 15–19 bar alatt", 10.5)
     ax = axp(fig, W, H, 112, 32, 215, 92)
-    hbar(ax, ["Sima PLA", "PHACK PHA/PHBH", "Primer Al / PP"], [58, 115, 145], [RED_L, GREEN, GREY],
+    hbar(ax, ["Sima PLA\n(Tg 55–65°C)", "PHACK PHA/PHBH", "Primer Al / PP"], [58, 115, 145], [RED_L, GREEN, GREY],
          ["58°C – megroggyan", "105–120°C – stabil", ">140°C"], 175)
     ax.axvspan(90, 98, color="#FADBD8", alpha=0.6, zorder=1)
     ax.axvline(95, color=RED, linestyle="--", linewidth=1.5, zorder=4)
-    ax.text(95, 1.04, "Kávéfőzés: 90–95°C, 15–19 bar", transform=ax.get_xaxis_transform(), ha="center",
+    ax.text(95, 1.04, "Kávéfőzés: 90–95°C (max. 19 bar)", transform=ax.get_xaxis_transform(), ha="center",
             va="bottom", fontsize=9, fontweight="bold", color=RED)
     axis_label(ax, "Alakstabilitási határhőmérséklet (°C)")
 
@@ -258,7 +258,7 @@ def make_fig_slide6_waste_and_lca():
 def make_fig_slide7_biodeg_comparison():
     W, H = 670, 170
     fig = new_fig(W, H)
-    ftitle(fig, W, H, 175, 11, "Házi komposztálási kinetika (20–25°C)", 10.5)
+    ftitle(fig, W, H, 175, 11, "Házi komposztálási kinetika (20–30°C, NF T51-800)", 10.5)
     ax1 = axp(fig, W, H, 44, 36, 262, 96)
     days = np.linspace(0, 360, 120)
     ax1.plot(days, 96 * (1 - np.exp(-days / 75.0)), color=GREEN, linewidth=2.6, label="PHACK PHA/PHBH")
@@ -277,7 +277,7 @@ def make_fig_slide7_biodeg_comparison():
 
     ftitle(fig, W, H, 505, 11, "Lebomlási képesség 4 környezetben", 10.5)
     ax2 = axp(fig, W, H, 470, 36, 190, 96)
-    envs = ["Tengervíz (20°C)", "Házi komposzt\n(20–25°C)", "Ipari komposzt\n(58°C)", "Biogázüzem\n(30–45 nap)"]
+    envs = ["Tengervíz (20°C)", "Házi komposzt\n(20–30°C)", "Ipari komposzt\n(58°C)", "Biogázüzem\n(30–45 nap)"]
     pha = [92, 95, 98, 94]
     pla = [3, 8, 92, 12]
     y = np.arange(4)
@@ -336,28 +336,52 @@ def make_fig_slide14_pert():
     W, H = 670, 174
     fig = new_fig(W, H)
     ov = overlay(fig, W, H)
-    ftitle(fig, W, H, 335, 11, "Munkacsomagok kapcsolati hálója és mérföldkő-kapuk (PERT)", 11)
+    ftitle(fig, W, H, 335, 9, "Munkacsomagok és feladatok kapcsolati hálója (PERT – T1.1–T5.3, MS1–MS3)", 10.2)
     wps = [
-        ("WP1 · Specifikáció", "RWTH | M1–M12 | 68 PM", "→ D1.1 & MS1 (M12)", "#005588"),
-        ("WP2 · Kompoundálás", "BME | M6–M24 | 144 PM", "→ D2.1 & MS2 (50 kg)", NAVY),
-        ("WP3 · Fólia és formázás", "MOL | M18–M36 | 136 PM", "→ D3.1, D3.2 & MS3", BLUE),
-        ("WP4 · Lebomlás & LCA", "RWTH | M24–M44 | 96 PM", "→ D4.1 & D4.2 (M44)", GREEN),
+        ("WP1 · Specifikáció", "RWTH | M1–M12 | 68 PM → MS1", "#005588", [
+            "T1.1 Gépi tűrések (±0,1 mm)",
+            "T1.2 Nyers PHA/PHBH audit",
+            "T1.3 EU 10/2011 & PPWR → D1.1",
+        ]),
+        ("WP2 · Kompoundálás", "BME | M6–M24 | 144 PM → MS2", NAVY, [
+            "T2.1 Orotinsav/talkum nukl.",
+            "T2.2 Kétcsigás extr. (170°C)",
+            "T2.3 50 kg & 1k db → D2.1",
+        ]),
+        ("WP3 · Fólia & formázás", "MOL | M18–M36 | 136 PM → MS3", BLUE, [
+            "T3.1 5-rétegű fólia (0,40 mm)",
+            "T3.2 Temperált szersz. (65°C)",
+            "T3.3 100k db & UH → D3.1–3.2",
+        ]),
+        ("WP4 · Lebomlás & LCA", "RWTH | M24–M44 | 96 PM → TRL 7", GREEN, [
+            "T4.1 EN 13432 & NF T51-800",
+            "T4.2 OECD 208 & migráció → D4.1",
+            "T4.3 ISO 14040 LCA → D4.2",
+        ]),
     ]
-    bw, gap, y, bh = 146, 23.3, 66, 74
-    for i, (a, b, c, col) in enumerate(wps):
-        x = 4 + i * (bw + gap)
-        box(ov, x, y, bw, bh, col, rounding=8)
-        ov.text(x + bw / 2.0, y + 57, a, ha="center", va="center", fontsize=10.5, fontweight="bold", color="white")
-        ov.text(x + bw / 2.0, y + 37, b, ha="center", va="center", fontsize=9.5, color="#D6EAF8")
-        ov.text(x + bw / 2.0, y + 17, c, ha="center", va="center", fontsize=9.5, fontweight="bold", color="white")
+    bw, gap, y_wp, bh_wp = 148, 21.3, 122, 34
+    for i, (a, b, col, t_list) in enumerate(wps):
+        x = 6 + i * (bw + gap)
+        box(ov, x, y_wp, bw, bh_wp, col, rounding=6)
+        ov.text(x + bw / 2.0, y_wp + 22, a, ha="center", va="center", fontsize=9.5, fontweight="bold", color="white")
+        ov.text(x + bw / 2.0, y_wp + 9, b, ha="center", va="center", fontsize=8.0, fontweight="bold", color="#D6EAF8")
         if i < 3:
-            ov.annotate("", xy=(x + bw + gap - 3, y + bh / 2.0), xytext=(x + bw + 3, y + bh / 2.0),
-                        arrowprops=dict(arrowstyle="-|>", color=NAVY, lw=2.0))
-    box(ov, 4, 6, 662, 50, "#E0ECF8", edge=NAVY, lw=1.2, rounding=8)
-    ov.text(335, 41, "WP5 · Projektmenedzsment, minőségbiztosítás, IPR & disszemináció (BME | M1–M48 | 76 PM)",
-            ha="center", va="center", fontsize=10, fontweight="bold", color=NAVY)
-    ov.text(335, 21, "→ D5.1 Honlap (M6) & D5.2 Zárójelentés (M48)   |   Összesen: 520 PM",
-            ha="center", va="center", fontsize=10, fontweight="bold", color=NAVY)
+            ov.annotate("", xy=(x + bw + gap - 2, y_wp + bh_wp / 2.0), xytext=(x + bw + 2, y_wp + bh_wp / 2.0),
+                        arrowprops=dict(arrowstyle="-|>", color=NAVY, lw=1.8))
+        stem_x = x + 7
+        ov.plot([stem_x, stem_x], [y_wp, 47], color=col, linewidth=1.4)
+        for t_idx, t_txt in enumerate(t_list):
+            ty = 96 - t_idx * 29
+            ov.plot([stem_x, x + 14], [ty + 11, ty + 11], color=col, linewidth=1.2)
+            box(ov, x + 14, ty, bw - 14, 22, "#FFFFFF", edge=col, lw=1.1, rounding=4)
+            ov.text(x + 14 + (bw - 14) / 2.0, ty + 11, t_txt, ha="center", va="center", fontsize=7.8,
+                    fontweight="bold", color=DARK)
+
+    box(ov, 6, 4, 658, 28, "#E0ECF8", edge=NAVY, lw=1.2, rounding=6)
+    ov.text(335, 21, "WP5 · Projektmenedzsment, IPR & Disszemináció (BME | M1–M48 | 76 PM) — T5.1 Irányítás · T5.2 EPO szabadalom · T5.3 Q1 OA & CEN",
+            ha="center", va="center", fontsize=8.6, fontweight="bold", color=NAVY)
+    ov.text(335, 10, "→ D5.1 Honlap & DMP (M6) · D5.2 Zárójelentés (M48)   |   Teljes konzorciumi ráfordítás: 520 PM (4,2 M€)",
+            ha="center", va="center", fontsize=8.3, fontweight="bold", color=BLUE)
     return fig
 
 
@@ -477,35 +501,46 @@ def make_fig_slide20_risk_heatmap():
 
 
 # ----------------------------------------------------------------------------
-# slide 21 – Gantt chart                                          (670 x 184)
+# slide 21 – Gantt chart                                          (670 x 216)
 # ----------------------------------------------------------------------------
 def make_fig_slide21_gantt_timeline():
-    W, H = 670, 184
+    W, H = 670, 216
     fig = new_fig(W, H)
-    ftitle(fig, W, H, 335, 11, "Részletes 48 hónapos Horizon Europe Gantt-ütemterv · mérföldkövek és deliverable-ök", 10.5)
-    ax = axp(fig, W, H, 196, 40, 462, 108)
+    ftitle(fig, W, H, 335, 9, "Részfeladat-szintű (T1.1–T5.3) 48 hónapos Gantt-ütemterv · mérföldkövek és eredmények", 10.0)
+    ax = axp(fig, W, H, 210, 28, 448, 164)
     tasks = [
-        ("WP1 · Specifikáció (T1.1–T1.3)", 1, 12, MID, "D1.1 · MS1"),
-        ("WP2 · Kompoundálás (T2.1–T2.3)", 6, 24, NAVY, "D2.1 · MS2"),
-        ("WP3 · Fólia + formázás (T3.1–T3.3)", 18, 36, BLUE, "D3.1 · D3.2 · MS3"),
-        ("WP4 · EN 13432 + LCA (T4.1–T4.3)", 24, 44, GREEN, "D4.1 · D4.2"),
-        ("WP5 · Menedzsment + IPR (T5.1–T5.3)", 1, 48, GREY, "D5.1 (M6) …… D5.2 (M48)"),
+        ("WP1 · T1.1 Gépi tűrések (±0,1 mm)", 0, 6, MID, "M1–M6"),
+        ("WP1 · T1.2 Nyers PHA/PHBH audit", 3, 9, MID, "M4–M9"),
+        ("WP1 · T1.3 EU 10/2011 & PPWR", 6, 12, MID, "D1.1 · MS1 (M12)"),
+        ("WP2 · T2.1 Orotinsav/talkum nukl.", 5, 14, NAVY, "M6–M14"),
+        ("WP2 · T2.2 Kétcsigás kompoundálás", 10, 20, NAVY, "M11–M20"),
+        ("WP2 · T2.3 Reológia & 50 kg (1k db)", 16, 24, NAVY, "D2.1 · MS2 (M24)"),
+        ("WP3 · T3.1 5-rétegű síkfólia (MOL)", 17, 28, BLUE, "M18–M28"),
+        ("WP3 · T3.2 Temperált szersz. (ALFA)", 21, 32, BLUE, "M22–M32"),
+        ("WP3 · T3.3 100k db pilot & UH", 28, 36, BLUE, "D3.1–3.2 · MS3 (M36)"),
+        ("WP4 · T4.1 EN 13432 & NF T51-800", 23, 42, GREEN, "M24–M42"),
+        ("WP4 · T4.2 Ökotoxicitás & migráció", 30, 44, GREEN, "D4.1 (M44)"),
+        ("WP4 · T4.3 ISO 14040/44 LCA", 32, 44, GREEN, "D4.2 (M44)"),
+        ("WP5 · T5.1 Menedzsment & QA", 0, 48, GREY, "D5.2 (M48)"),
+        ("WP5 · T5.2 IPR, EPO szabadalom", 12, 48, GREY, "M13–M48"),
+        ("WP5 · T5.3 Disszemináció & CEN", 0, 48, GREY, "D5.1 (M6) … M48"),
     ]
     for k, (label, a, b, col, tag) in enumerate(tasks):
-        ax.barh(k, b - a, left=a, height=0.62, color=col, edgecolor=NAVY, linewidth=0.8, zorder=3)
-        ax.text(a + (b - a) / 2.0, k, tag, ha="center", va="center", fontsize=9, fontweight="bold", color="white",
+        ax.barh(k, b - a, left=a, height=0.72, color=col, edgecolor=NAVY, linewidth=0.5, zorder=3)
+        ax.text(a + (b - a) / 2.0, k, tag, ha="center", va="center", fontsize=6.8, fontweight="bold", color="white",
                 zorder=5)
-    for m, tag in ((12, "MS1"), (24, "MS2"), (36, "MS3")):
-        ax.axvline(m, color=RED, linestyle="--", linewidth=1.2, zorder=2)
-        ax.text(m, 1.03, tag, transform=ax.get_xaxis_transform(), ha="center", va="bottom", fontsize=9,
+    for m, tag in ((12, "MS1 (M12)"), (24, "MS2 (M24)"), (36, "MS3 (M36)"), (44, "D4.1/4.2")):
+        ax.axvline(m, color=RED, linestyle="--", linewidth=1.1, zorder=4)
+        ax.text(m, 1.01, tag, transform=ax.get_xaxis_transform(), ha="center", va="bottom", fontsize=7.8,
                 fontweight="bold", color=RED)
-    ax.set_yticks(range(5))
-    ax.set_yticklabels([t[0] for t in tasks], fontsize=9, fontweight="bold", color=NAVY)
-    ax.set_ylim(4.55, -0.55)
-    ax.set_xlim(0, 49)
-    ax.set_xticks([1, 12, 24, 36, 48])
-    ax.set_xticklabels(["M1", "M12", "M24", "M36", "M48"], fontsize=9.5, fontweight="bold", color=NAVY)
-    axis_label(ax, "Hónap (1. év: M1–M12 · 2. év: M13–M24 · 3. év: M25–M36 · 4. év: M37–M48)", 9)
+    ax.set_yticks(range(len(tasks)))
+    ax.set_yticklabels([t[0] for t in tasks], fontsize=7.4, fontweight="bold", color=NAVY)
+    ax.set_ylim(len(tasks) - 0.35, -0.65)
+    ax.set_xlim(0, 48.5)
+    ax.set_xticks([0, 6, 12, 18, 24, 30, 36, 42, 48])
+    ax.set_xticklabels(["M1", "M6", "M12", "M18", "M24", "M30", "M36", "M42", "M48"], fontsize=8.2,
+                       fontweight="bold", color=NAVY)
+    axis_label(ax, "Hónap (1. év: M1–M12 · 2. év: M13–M24 · 3. év: M25–M36 · 4. év: M37–M48)", 8.5)
     style_axes(ax, "x")
     return fig
 

@@ -101,8 +101,8 @@ Az indirekt a közvetlen költség 25%-a: 840 000 / 3 360 000 = 25%.
 | 2 | MOL Nyrt. | IND | HU | Kompoundálás, koextrúzió, méretnövelés | WP3 |
 | 3 | Alfa Industry Kft. | SME | HU | Szerszám, termoformálás | – |
 | 4 | RWTH Aachen University | RTO | DE | EN 13432, ökotoxicitás, LCA | WP1, WP4 |
-| 5 | Danimer Scientific / Bio-on European Facility | IND | IT | PHA/PHBH alapanyag-fermentáció | – |
-| 6 | PackCoffee Europe Barista Alliance | IND | AT | Töltősori tesztek, barista validáció | – |
+| 5 | Danimer / Bio-on EU PHA Pilot (Kaneka PHBH ref.) | IND | IT | PHA/PHBH alapanyag-fermentáció | – |
+| 6 | PackCoffee Europe Barista Alliance | ASSO/IND | AT | Iparági szövetség, töltősori tesztek, barista validáció | – |
 
 **Miért nincs logisztikai partner?** A szállítás nem K+F, ezért alvállalkozói szolgáltatás (AGA 6.2.B, 9.3). Ez az oktatói követelmény (`info.txt`) is.
 
@@ -152,10 +152,10 @@ Az indirekt a közvetlen költség 25%-a: 840 000 / 3 360 000 = 25%.
 | 11 | 4 KPI | Önköltség, piaci kiváltás, lebomlás/LCA, barrier. | H4 | 40 mp |
 | 12 | Disszemináció | 5 Q1 cikk, nyílt tudomány, CEN szabványosítás. | H5 | 40 mp |
 | 13 | Kommunikáció | „Hová dobjam?” kampány, zöldmosás elleni fellépés. | H5 | 40 mp |
-| 14 | WP lista (3.1a) | 5 WP, vezetők, PM-ek. | H3 | 30 mp |
-| 15 | WP1–WP2 | Specifikáció/szabályozás és PHA kompoundálás. | H3 | 30 mp |
-| 16 | WP3 | Koextrúzió, termoformálás, töltősori pilot. | H3 | 30 mp |
-| 17 | WP4–WP5 | Biodegradáció, LCA, menedzsment. | H3 | 30 mp |
+| 14 | WP lista (3.1a) | 5 WP, vezetők, PM-ek + részfeladat-szintű (T1.1–T5.3) PERT-háló. | H3 | 30 mp |
+| 15 | WP1–WP2 (3.1b) | Táblázat 3.1b: specifikáció/szabályozás és PHA kompoundálás. | H3 | 30 mp |
+| 16 | WP3 (3.1b) | Táblázat 3.1b: koextrúzió, termoformálás, töltősori pilot. | H3 | 30 mp |
+| 17 | WP4–WP5 (3.1b) | Táblázat 3.1b: biodegradáció, LCA, menedzsment. | H3 | 30 mp |
 | 18 | Mérföldkövek (3.1d) | MS1–MS3 stage-gate. | H6 | 25 mp |
 | 19 | Deliverable-ök (3.1c) | D1.1–D5.2, PU/SEN egyensúly. **Átadás H4-nek.** | H6 | 25 mp |
 | 20 | Kockázatok (3.1e) | R1–R3, kettős barrier tartalék. **Visszaadás H6-nak.** | H4 | 30 mp |

@@ -156,7 +156,23 @@ class TestChallengerStress(unittest.TestCase):
                 s19_text += " " + sh.text
         for deliv in ["D1.1", "D2.1", "D3.1", "D3.2", "D4.1", "D4.2", "D5.1", "D5.2"]:
             self.assertIn(deliv, s19_text, f"Deliverable {deliv} missing from Slide 19!")
-        print("\n[PASS] Slide 11 (4 KPIs + Cradle-to-Grave) and Slide 19 (all 8 deliverables D1.1-D5.2) verified.")
+
+        # Verify Table 3.1b structured tables on Slides 15, 16, 17
+        for s_num in [15, 16, 17]:
+            tbls = [sh for sh in prs.slides[s_num - 1].shapes if sh.has_table]
+            self.assertGreaterEqual(len(tbls), 1, f"Slide {s_num} must contain official Table 3.1b table(s)!")
+
+        # Verify ASSO participant type on Slide 3
+        s3_text = ""
+        for sh in prs.slides[2].shapes:
+            if sh.has_table:
+                for row in sh.table.rows:
+                    for cell in row.cells:
+                        s3_text += " " + cell.text
+            elif sh.has_text_frame:
+                s3_text += " " + sh.text
+        self.assertIn("ASSO", s3_text, "Slide 3 must include ASSO participant type per template!")
+        print("\n[PASS] Slide 11 (4 KPIs + Cradle-to-Grave), Slide 15-17 (Table 3.1b), Slide 3 (ASSO), and Slide 19 (all 8 deliverables D1.1-D5.2) verified.")
 
     def test_05_slide_22_budget_pm_and_gy02_parity(self):
         """Verify Slide 22 matches SPEAKER_NOTES.md & PROJECT_CONTEXT.md (50/3/16/11/20%, 144/100/90/96/50/40 PM, 1.05M/850k/650k/750k/550k/350k EUR) and GY02 on Slides 1 & 23."""

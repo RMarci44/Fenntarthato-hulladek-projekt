@@ -40,15 +40,18 @@ Az ellenőrzés internetes keresésen alapult (2026), a másodlagos forrásokat 
 2. **LCA (6., 7., 10., 11., 17. dia, jegyzet, Q&A):** a 120–150 / 15–25 kg CO₂e/1000 db és a „>70%” törölve; helyette ellenőrzött IAI- és WUR-adat, a KPI 3 pedig **célérték: ≥ 25%** (WP4 igazolja). A 6. dia jobb ábrája a WUR Table 15 adatait mutatja.
 3. **Kapszulák száma (6. dia):** „60 milliárd globálisan / 12 milliárd EU” helyett „~53 milliárd db/év az EU-ban (WUR-becslés)”; a visszagyűjtés ~25% (NL, WUR 2025). A „>10 milliárd db/év lerakóban/égetőben” alsó becslésként érvényes marad (2. és 3. dia).
 4. **Növekedés (6. dia):** ~7–8,5%/év (Straits Research; Sci. Rep. 2020).
-5. **Danimer / Bio-on:** a diákon a névvel szereplő partnerek változatlanok (csapatdöntés); a cégállapot-kockázatra a Q&A F.3 ad választ. Beadás előtt érdemes a partnert cserélni vagy általánosítani (pl. „európai PHA-gyártó”).
+5. **Danimer / Bio-on / Kaneka PHBH referencia (3. dia, 15. dia):** a 3. dián `Danimer / Bio-on EU PHA Pilot (Kaneka PHBH ref.)` szerepel, a 6. partner (`PackCoffee Europe Barista Alliance`) pedig `ASSO/IND` besorolást kapott, így a sablon által kért mind a 4 szereplőtípus (`RTO`, `IND`, `SME`, `ASSO`) képviselteti magát; a cégállapot-kockázatra a Q&A F.3 ad védési választ.
+6. **Pontosított hőmérséklet- és nyomástartományok (2., 4., 7., 11., 15., 17. dia):**
+   - PLA $T_g$: `55–60 °C (irodalmi: 55–65 °C)`
+   - NF T51-800 házi komposzt: `20–25 °C (NF T51-800: 20–30 °C)`
+   - Nespresso extrakció: `90–95 °C (93±2 °C)` és `15–19 bar (max. 19 bar)`
+7. **Sablon- és mintaprezentáció-konform táblázatok és ábrák:**
+   - **15–17. dia (`Táblázat 3.1b`):** Valódi Horizon Europe `Táblázat 3.1b` struktúrájú táblázatok minden munkacsomagra (`WP1–WP5`).
+   - **14. és 21. dia (PERT és Gantt):** Részfeladat-szintű (`T1.1–T5.3`) PERT kapcsolati háló és 48 hónapos Gantt-ütemterv.
+   - **9–10. dia (Hatás-táblázatok):** Explicit `KPI 1–4` fejlécek és számszerűsített mutatók.
+   - **22. dia (`Táblázat 3.1f` és költségindoklás):** A sablon 13. diájának megfelelően a WP5-ben a koordinátor (`BME: 28 PM`) és a kutatóegyetem (`RWTH: 16 PM`) + iparági szövetség (`PCOFF: 12 PM`) viszi a fő szerepet, az ipari gyártók (`MOL: 6 PM`, `ALFA: 6 PM`, `BIO: 8 PM`) adminisztratív terhe minimális; minden szakmai WP-ben a WP-vezető adja a legnagyobb PM-et.
 
 A beszédszöveg szószáma 1515 maradt.
-
-## 2/b. Még nyitott
-
-- PLA Tg: az irodalom 60–65 °C; a diákon „55–60 °C” szerepel (alsó tartomány), pontosítható „60–65 °C”-ra.
-- Nespresso: a diákon „15–19 bar, 90–95 °C”; az egyetlen forrás 19 bar / 93 ± 2 °C.
-- PHA ára: EUR/kg forrás nincs.
 
 ---
 
