@@ -170,6 +170,23 @@ Teljes szöveg: `SPEAKER_NOTES.md` (összesen 1515 szó, pontosan 720 mp, ~126 s
 
 ## 8. Előadói beosztás és színpadi rend
 
+### 8.1. Hivatalos 5 fős beosztás (Szigorúan sorban haladva – AJÁNLOTT)
+
+Ha a csapat 5 fővel ad elő, a zavaró visszalépések (pl. a 20. dia kockázati visszatérése) elkerülése érdekében szigorúan sorban (1 ➔ 2 ➔ 3 ➔ 4 ➔ 5) haladunk:
+
+| Előadó | Diák | Idő | Szószám | Fő témakör és felelősség |
+|---|:---:|:---:|:---:|---|
+| **1. Előadó** | **1–4.** | ~2:00 | ~250 | **Pályázati keret & Célok:** Pályázat adatai (4,2M €, 48 hó), a 6 fős konzorcium (miért nincs logisztikai cég), 4 stratégiai cél |
+| **2. Előadó** | **5–8.** | ~2:15 | ~298 | **Anyagtudomány & Gyártás:** TRL ugrás (3 ➔ 7), hulladékprobléma, **PHA vs. PLA** (hőállóság, házi lebomlás), 6 lépéses gyártási lánc *(külön puska: `ELOADO_2_PUSKA.md`)* |
+| **3. Előadó** | **9–13.** | ~2:40 | ~385 | **Piac & Hatások:** Célcsoportok, EU PPWR rendelet, a 4 fő KPI mutató, 5 Q1 publikáció, „Hová dobjam?” lakossági edukációs kampány |
+| **4. Előadó** | **14–17.** | ~2:10 | ~249 | **Megvalósítás (WP1–WP5):** Munkacsomagok felépítése, kompoundálás, 5 rétegű síkfólia koextrúzió, termoformálás, EN 13432 tesztek |
+| **5. Előadó** | **18–24.** | ~2:35 | ~318 | **Menedzsment & Zárás:** Mérföldkövek (MS1–MS3), kockázatok (R1–R3), 4 éves Gantt, 4,2M € büdzsé megoszlása, csapat, zárszó |
+| **Összesen** | **24 dia** | **~11:40** | **1515 szó** | **Biztonságos időkeret a szigorú 12:00 perces limit előtt! (+ 3:00 perc vita)** |
+
+*(A teljes diánkénti beszéd a `docs/SPEAKER_NOTES.md`-ben található.)*
+
+### 8.2. Eredeti 6 fős beosztás (Archív referencia)
+
 | Előadó | Diák | Idő |
 |---|---|---|
 | Hallgató 1 | 1–3 | 1:30 |
