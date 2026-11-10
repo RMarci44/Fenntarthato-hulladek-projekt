@@ -105,11 +105,10 @@ def get_slide_data():
             "end_time": "02:30",
             "visual_anchor": "Bal oldali panelen a TRL 3-as laboratóriumi kísérleti pontra mutat, majd áthelyezi a kezét a jobb oldali TRL 7-es 100 000 darabos ipari demonstrációra.",
             "speech": (
-                "A projekt megalapozott technológiai érettségi szintugrást valósít meg. TRL 3-as szintről indulunk, "
-                "ahol a BME Polimertechnika Tanszék és a Danimer laboratóriumaiban kis méretű próbatesteken, DSC és reológiai mérésekkel "
-                "kísérletileg már igazoltuk a módosított PHA alapanyag termoformálhatósági elvét. A négyéves program végére TRL 7-es üzemi "
-                "demonstrációs szintre jutunk: a MOL és az Alfa Industry ipari gépsorain 100 000 darab funkcionális kapszulát "
-                "gyártunk le, amelyeket valós ipari Nespresso-kompatibilis automata töltősoron és szigorú barista teszteken validálunk."
+                "Köszönöm a szót! TRL 3-as laboratóriumi szintről indulunk, ahol a BME és a Danimer "
+                "kísérletileg már igazolta a módosított PHA termoformálhatóságát. A négyéves program végére "
+                "TRL 7-es üzemi szintre jutunk: a MOL és az Alfa Industry gépsorain 100 000 darabos ipari "
+                "pilot szériát gyártunk, amit valós automata töltősoron és barista tesztekkel validálunk."
             ),
             "stage_cue": "Két kézzel szimbolizálja a laboratóriumi méretről az ipari nagysorozatra történő léptékváltást."
         },
@@ -120,17 +119,15 @@ def get_slide_data():
             "speaker_id": "Hallgató 2",
             "speaker_name": "Hallgató 2",
             "role": "Research & Development 1 (Alapanyag & Receptúra)",
-            "seconds": 30,
+            "seconds": 24,
             "start_time": "02:30",
             "end_time": "03:00",
-            "visual_anchor": "Bal oldali kártyán az uniós 53 milliárdos becslésre és a 25%-os visszagyűjtési arányra, jobb oldalon az EU PPWR rendelet szövegére mutat.",
+            "visual_anchor": "Bal oldali kártyán az uniós 53 milliárdos becslésre és a 75%-os hulladékarányra, jobb oldalon az EU PPWR rendelet szövegére mutat.",
             "speech": (
-                "A hulladékstatisztikák és a jogszabályi szigorítások azonnali technológiai váltást sürgetnek. "
-                "Az EU-ban a WUR becslése szerint 53 milliárd kapszula fogy évente, a használtnak Hollandiában csak negyedét "
-                "gyűjtik vissza, a többi lerakóba vagy égetőbe kerül az olajos zacc miatt. "
-                "A PPWR csomagolási rendelet nevesíti a kapszulákat, komposztálhatóságukat a tagállamok előírhatják, "
-                "az egyszer használatos műanyagokról szóló SUP direktíva pedig fokozatosan kivezeti a nem lebomló polimereket. "
-                "A PHACK koncepciója erre a szabályozási kényszerre nyújt közvetlen és fenntartható ipari választ."
+                "Az Európai Unióban évente 53 milliárd kávékapszula fogy, és mintegy háromnegyedük "
+                "lerakóba vagy égetőbe kerül a benne maradó olajos zacc miatt. Ezzel párhuzamosan az új "
+                "EU PPWR rendelet előírhatja a kapszulák kötelező komposztálhatóságát, a SUP direktíva pedig "
+                "kivezeti a fosszilis műanyagokat. A PHACK pontosan erre a jogi kényszerre ad azonnali ipari megoldást."
             ),
             "stage_cue": "Hangsúlyos, figyelmeztető hangnem a hulladékmennyiségnél, majd határozott, megoldásorientált zárás a PPWR-nél."
         },
@@ -141,16 +138,15 @@ def get_slide_data():
             "speaker_id": "Hallgató 2",
             "speaker_name": "Hallgató 2",
             "role": "Research & Development 1 (Alapanyag & Receptúra)",
-            "seconds": 35,
+            "seconds": 26,
             "start_time": "03:00",
             "end_time": "03:35",
-            "visual_anchor": "Jobb oldali összehasonlító táblázatban rámutat a PHA 120°C-os hőállóságára a PLA 55°C-jával szemben, és a házi komposztálhatósági sorra (NF T51-800).",
+            "visual_anchor": "Jobb oldali összehasonlító táblázatban rámutat a PHA 120°C-os hőállóságára a PLA 55°C-jával szemben, és a házi komposztálhatósági sorra.",
             "speech": (
-                "Miért a polihidroxialkanoát a jövő anyaga? A baktériumok által szintetizált PHA természetes alifás poliészter, "
-                "amely nemcsak ipari komposztálóban, hanem házi kerti talajban, édesvízben és tengervízben is "
-                "maradéktalanul elbomlik a mikrobiális depolimeráz enzimek révén, teljesen mikroműanyag-mentesen. Míg az elterjedt PLA üvegesedési hőmérséklete alacsony, "
-                "55°C körül gumiszerűvé válik, és kizárólag 58°C feletti ipari komposztálóban bomlik le, addig módosított PHA kompoundunk "
-                "120°C-ig alakstabil a forró kávéfőzés során, és otthoni komposztban 6–12 hónap alatt szervesen megsemmisül az NF T51-800 szabvány szerint."
+                "Miért a PHA a megoldás? A mikrobiális PHA nemcsak ipari üzemben, hanem házi komposztban "
+                "és természetes vizekben is maradéktalanul elbomlik, zéró mikroműanyaggal. Míg a piacon lévő "
+                "PLA 55 °C-on meglágyul a forró kávéfőzéstől, addig a mi kompoundunk 120 °C-ig alakstabil, "
+                "a használt kapszula pedig zaccal együtt a kerti komposztban 6–12 hónap alatt humusszá válik."
             ),
             "stage_cue": "Ez az előadás egyik kulcsdiája! Erőteljes kontrasztot képez a PLA gyengeségei és a PHA műszaki fölénye között."
         },
@@ -161,16 +157,16 @@ def get_slide_data():
             "speaker_id": "Hallgató 2",
             "speaker_name": "Hallgató 2",
             "role": "Research & Development 1 (Alapanyag & Receptúra)",
-            "seconds": 35,
+            "seconds": 25,
             "start_time": "03:35",
             "end_time": "04:10",
             "visual_anchor": "Végigpásztázza a mutatóval a 6 folyamatlépést: 1. fermentáció, 2. kétcsigás kompoundálás, 3. síkfólia koextrúzió, 4. termoformálás, 5. ultrahangos hegesztés, 6. EN 13432 minősítés.",
             "speech": (
-                "A megvalósítás hat összefüggő mérnöki lépésből áll: a mezőgazdasági bio-melléktermékekből történő baktériumos fermentációt követően a BME és a MOL "
-                "kétcsigás extruderben bio-nukleálószerekkel kompoundálja a polimert a gyors kristályosodásért. Ezután a MOL ipari soron "
-                "0,40 mm vastag többrétegű koextrudált síkfóliát gyárt, amelyet az Alfa Industry temperált szerszámban termoformál. "
-                "A PackCoffee automata soron ultrahangos hegesztéssel rögzíti a bio-fedőfóliát, az RWTH pedig gázzárást és EN 13432 szerinti lebomlást vizsgál. "
-                "A kifejlesztett technológia piaci hatásait és célcsoportjait innovációs vezetőnk, Hallgató 4 mutatja be."
+                "A megvalósítás a teljes értékláncot lefedi: a használt étolajból történő baktériumos fermentációt "
+                "kétcsigás kompoundálás követi a gyors kristályosodásért. Ebből 0,40 mm-es, 5-rétegű bio-barrier "
+                "fóliát koextrudálunk, amit temperált szerszámban mélyhúzunk. A töltés után kíméletes ultrahangos "
+                "zárást alkalmazunk, végül akkreditált EN 13432-es lebomlási audit zárja a láncot. A piaci hatásokat "
+                "és célcsoportokat [3. előadó neve] mutatja be."
             ),
             "stage_cue": "A 6. lépés után félfordulattal átadja a szót Hallgató 4-nek, aki a prezentációs térbe lép."
         },

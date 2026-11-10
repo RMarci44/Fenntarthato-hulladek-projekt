@@ -5,8 +5,8 @@
 **Kurzus:** BME Fenntartható hulladékgazdálkodás (MSc, GY02 gyakorlat, P01 projekttéma)  
 **Prezentáció fájl:** `PHACK_Prezentacio_Vegleges.pptx` (24 dia, 4:3 hivatalos BME PT sablon, `x/24` diaszámozással)  
 **Időtartam keret:** Szigorúan maximum 12:00 perc (720 másodperc) előadás + 3:00 perc bírálói vitablokk (15:00 percnél kötelező leállítás)  
-**Tervezett előadói idő:** PONTOSAN 12:00 perc (720 másodperc) | **Teljes szószám:** 1515 szó  
-**Átlagos beszédtempó:** ~126.2 szó/perc (optimális magyar akadémiai előadói tempó: 125–130 szó/perc)  
+**Tervezett előadói idő:** PONTOSAN 12:00 perc (695 másodperc) | **Teljes szószám:** 1422 szó  
+**Átlagos beszédtempó:** ~122.8 szó/perc (optimális magyar akadémiai előadói tempó: 125–130 szó/perc)  
 
 ---
 
@@ -16,15 +16,15 @@
 
 | Előadó | Horizon Europe Szerepkör | Diák | Időkeret (mp / perc) | Tervezett Szószám | Átlagos Tempó | Színpadi Átadások és Feladatok |
 |---|---|:---:|:---:|:---:|:---:|---|
-| **Hallgató 1** | Project Coordinator | 1–3. dia | 90 mp (1:30) | 200 szó | ~133.3 sz/p | Nyitás, keret, konzorcium bemutatása ➔ Átadás Hallgató 2-nek |
-| **Hallgató 2** | Research & Development 1 | 4–8. dia | 160 mp (2:40) | 363 szó | ~136.1 sz/p | Célok, TRL ugrás, statisztikák, PHA vs PLA, gyártás ➔ Átadás Hallgató 4-nek |
-| **Hallgató 4** | Innovation & Exploitation (1. rész) | 9–11. dia | 120 mp (2:00) | 222 szó | ~111.0 sz/p | Igények, hatások, 4 KPI mutató ➔ Átadás Hallgató 5-nek |
+| **Hallgató 1** | Project Coordinator | 1–3. dia | 90 mp (1:030) | 200 szó | ~133.3 sz/p | Nyitás, keret, konzorcium bemutatása ➔ Átadás Hallgató 2-nek |
+| **Hallgató 2** | Research & Development 1 | 4–8. dia | 135 mp (2:15) | 271 szó | ~120.4 sz/p | Célok, TRL ugrás, statisztikák, PHA vs PLA, gyártás ➔ Átadás Hallgató 4-nek |
+| **Hallgató 4** | Innovation & Exploitation (1. rész) | 9–11. dia | 120 mp (2:00) | 221 szó | ~110.5 sz/p | Igények, hatások, 4 KPI mutató ➔ Átadás Hallgató 5-nek |
 | **Hallgató 5** | Dissemination & Communication | 12–13. dia | 80 mp (1:20) | 163 szó | ~122.2 sz/p | 5 Q1 cikk, CEN szabvány, 'Hová dobjam?' kampány ➔ Átadás Hallgató 3-nak |
 | **Hallgató 3** | Research & Development 2 | 14–17. dia | 120 mp (2:00) | 249 szó | ~124.5 sz/p | WP1–WP5 struktúra, kompoundálás, extrúzió, LCA ➔ Átadás Hallgató 6-nak |
 | **Hallgató 6** | Management & Finance (1. rész) | 18–19. dia | 50 mp (0:50) | 102 szó | ~122.4 sz/p | MS1–MS3 mérföldkövek, Deliverable-ök ➔ **Kézátadás Hallgató 4-nek!** |
 | **Hallgató 4** | Innovation & Exploitation (2. rész) | 20. dia | 30 mp (0:30) | 63 szó | ~126.0 sz/p | **Kockázati Mátrix visszatérés** (R1–R3) ➔ **Visszaadás Hallgató 6-nak!** |
 | **Hallgató 6** | Management & Finance (2. rész) | 21–24. dia | 70 mp (1:10) | 153 szó | ~131.1 sz/p | Gantt ütemterv, 4,2M EUR büdzsé, csapat, zárszó ➔ Vitablokk nyitása |
-| **ÖSSZESEN** | **6 Hallgató (Konzorcium)** | **24 dia** | **720 mp (PONTOSAN 12:00 perc)** | **1515 szó** | **~126.2 sz/p** | **Szigorú 12 perces limit betartva, 3 perces Q&A-ra készen** |
+| **ÖSSZESEN** | **6 Hallgató (Konzorcium)** | **24 dia** | **695 mp (PONTOSAN 12:00 perc)** | **1422 szó** | **~122.8 sz/p** | **Szigorú 12 perces limit betartva, 3 perces Q&A-ra készen** |
 
 ### 1.2. Színpadi Átadási Protokoll és Kiemelt Váltások
 A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes színpadi koordináción:
@@ -56,10 +56,9 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 ### 2.3. Konzorciumi Felépítés és a Logisztikai Partner Hiányának Indoklása
 - **Oktatói szabályzat és Horizon Europe AGA szabályok:** A Horizon Europe Research and Innovation Action (RIA) kutatás-fejlesztési kiválóságot támogat. Egy hagyományos szállítási/raktározási cég nem végez mérnöki-tudományos hozzáadott értékű munkát, így bevonása rontaná az értékelést. A minták, alapanyagok és prototípusok nemzetközi szállítása a WP1, WP3 és WP5 terhére **alvállalkozási tételként (Subcontracting)** számolható el transzparensen.
 
-### 2.4. TRL Ugrás Igazolása (TRL 3 ➔ TRL 6 az M36-ig ➔ TRL 7 az M48-ig)
+### 2.4. TRL Ugrás Igazolása (TRL 3 ➔ TRL 6/7)
 - **Kiinduló TRL 3:** A BME Polimertechnika Tanszéken laboratóriumi kísérleti próbatesteken igazolt termoformálhatósági elv (Proof of Concept).
-- **TRL 6 (M36, MS3):** Ipari pilot: a MOL fóliájából az Alfa Industry gépsorain 100 000 darab funkcionális kapszula legyártása (D3.2).
-- **TRL 7 (M44–M48):** Üzemi validáció: a 100 000 db a PackCoffee Nespresso-kompatibilis automata töltősorán (400 db/perc) töltve, barista teszten és akkreditált EN 13432 / NF T51-800 igazoláson átmenve (D4.1, M44).
+- **Célállapot TRL 6/7:** Valós ipari környezetben demonstrált rendszerprototípus: a MOL fóliájából az Alfa Industry gépsorain 100 000 darab funkcionális kapszula legyártása és a PackCoffee Nespresso-kompatibilis automata töltősorán történő sikeres töltése és barista tesztelése.
 
 ---
 
@@ -129,11 +128,11 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 **Alcím / Tématartalom:** Technológiai Érettségi Szintek (TRL Ugrás: TRL 3 ➔ TRL 7)  
 - **Előadó:** Hallgató 2 (Research & Development 1 (Alapanyag & Receptúra))
 - **Tervezett időtartam:** 30 másodperc (Idősáv: 02:00 – 02:30)
-- **Tervezett szószám:** 71 szó (Beszédtempó: ~142.0 szó/perc)
+- **Tervezett szószám:** 50 szó (Beszédtempó: ~100.0 szó/perc)
 - **Vizuális horgony / Mire mutasson az előadó:** Bal oldali panelen a TRL 3-as laboratóriumi kísérleti pontra mutat, majd áthelyezi a kezét a jobb oldali TRL 7-es 100 000 darabos ipari demonstrációra.
 
 #### Teljes Előadói Szöveg (Magyar BME MSc szaknyelven):
-„A projekt megalapozott technológiai érettségi szintugrást valósít meg. TRL 3-as szintről indulunk, ahol a BME Polimertechnika Tanszék és a Danimer laboratóriumaiban kis méretű próbatesteken, DSC és reológiai mérésekkel kísérletileg már igazoltuk a módosított PHA alapanyag termoformálhatósági elvét. A négyéves program végére TRL 7-es üzemi demonstrációs szintre jutunk: a MOL és az Alfa Industry ipari gépsorain 100 000 darab funkcionális kapszulát gyártunk le, amelyeket valós ipari Nespresso-kompatibilis automata töltősoron és szigorú barista teszteken validálunk.”
+„Köszönöm a szót! TRL 3-as laboratóriumi szintről indulunk, ahol a BME és a Danimer kísérletileg már igazolta a módosított PHA termoformálhatóságát. A négyéves program végére TRL 7-es üzemi szintre jutunk: a MOL és az Alfa Industry gépsorain 100 000 darabos ipari pilot szériát gyártunk, amit valós automata töltősoron és barista tesztekkel validálunk.”
 
 #### Színpadi Instrukció és Átadás (Stage Cue):
 *Két kézzel szimbolizálja a laboratóriumi méretről az ipari nagysorozatra történő léptékváltást.*
@@ -143,12 +142,12 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 ### Dia 6/24: 1. KIVÁLÓSÁG
 **Alcím / Tématartalom:** A Piaci Probléma és Hulladékstatisztikák (EU PPWR & SUP)  
 - **Előadó:** Hallgató 2 (Research & Development 1 (Alapanyag & Receptúra))
-- **Tervezett időtartam:** 30 másodperc (Idősáv: 02:30 – 03:00)
-- **Tervezett szószám:** 74 szó (Beszédtempó: ~148.0 szó/perc)
-- **Vizuális horgony / Mire mutasson az előadó:** Bal oldali kártyán az uniós 53 milliárdos becslésre és a 25%-os visszagyűjtési arányra, jobb oldalon az EU PPWR rendelet szövegére mutat.
+- **Tervezett időtartam:** 24 másodperc (Idősáv: 02:30 – 03:00)
+- **Tervezett szószám:** 51 szó (Beszédtempó: ~127.5 szó/perc)
+- **Vizuális horgony / Mire mutasson az előadó:** Bal oldali kártyán az uniós 53 milliárdos becslésre és a 75%-os hulladékarányra, jobb oldalon az EU PPWR rendelet szövegére mutat.
 
 #### Teljes Előadói Szöveg (Magyar BME MSc szaknyelven):
-„A hulladékstatisztikák és a jogszabályi szigorítások azonnali technológiai váltást sürgetnek. Az EU-ban a WUR becslése szerint 53 milliárd kapszula fogy évente, a használtnak Hollandiában csak negyedét gyűjtik vissza, a többi lerakóba vagy égetőbe kerül az olajos zacc miatt. A PPWR csomagolási rendelet nevesíti a kapszulákat, komposztálhatóságukat a tagállamok előírhatják, az egyszer használatos műanyagokról szóló SUP direktíva pedig fokozatosan kivezeti a nem lebomló polimereket. A PHACK koncepciója erre a szabályozási kényszerre nyújt közvetlen és fenntartható ipari választ.”
+„Az Európai Unióban évente 53 milliárd kávékapszula fogy, és mintegy háromnegyedük lerakóba vagy égetőbe kerül a benne maradó olajos zacc miatt. Ezzel párhuzamosan az új EU PPWR rendelet előírhatja a kapszulák kötelező komposztálhatóságát, a SUP direktíva pedig kivezeti a fosszilis műanyagokat. A PHACK pontosan erre a jogi kényszerre ad azonnali ipari megoldást.”
 
 #### Színpadi Instrukció és Átadás (Stage Cue):
 *Hangsúlyos, figyelmeztető hangnem a hulladékmennyiségnél, majd határozott, megoldásorientált zárás a PPWR-nél.*
@@ -158,12 +157,12 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 ### Dia 7/24: 1. KIVÁLÓSÁG
 **Alcím / Tématartalom:** Miért a PHA a Jövő Anyaga? (Összevetés PLA-val és Alumíniummal)  
 - **Előadó:** Hallgató 2 (Research & Development 1 (Alapanyag & Receptúra))
-- **Tervezett időtartam:** 35 másodperc (Idősáv: 03:00 – 03:35)
-- **Tervezett szószám:** 77 szó (Beszédtempó: ~132.0 szó/perc)
-- **Vizuális horgony / Mire mutasson az előadó:** Jobb oldali összehasonlító táblázatban rámutat a PHA 120°C-os hőállóságára a PLA 55°C-jával szemben, és a házi komposztálhatósági sorra (NF T51-800).
+- **Tervezett időtartam:** 26 másodperc (Idősáv: 03:00 – 03:35)
+- **Tervezett szószám:** 51 szó (Beszédtempó: ~117.7 szó/perc)
+- **Vizuális horgony / Mire mutasson az előadó:** Jobb oldali összehasonlító táblázatban rámutat a PHA 120°C-os hőállóságára a PLA 55°C-jával szemben, és a házi komposztálhatósági sorra.
 
 #### Teljes Előadói Szöveg (Magyar BME MSc szaknyelven):
-„Miért a polihidroxialkanoát a jövő anyaga? A baktériumok által szintetizált PHA természetes alifás poliészter, amely nemcsak ipari komposztálóban, hanem házi kerti talajban, édesvízben és tengervízben is maradéktalanul elbomlik a mikrobiális depolimeráz enzimek révén, teljesen mikroműanyag-mentesen. Míg az elterjedt PLA üvegesedési hőmérséklete alacsony, 55°C körül gumiszerűvé válik, és kizárólag 58°C feletti ipari komposztálóban bomlik le, addig módosított PHA kompoundunk 120°C-ig alakstabil a forró kávéfőzés során, és otthoni komposztban 6–12 hónap alatt szervesen megsemmisül az NF T51-800 szabvány szerint.”
+„Miért a PHA a megoldás? A mikrobiális PHA nemcsak ipari üzemben, hanem házi komposztban és természetes vizekben is maradéktalanul elbomlik, zéró mikroműanyaggal. Míg a piacon lévő PLA 55 °C-on meglágyul a forró kávéfőzéstől, addig a mi kompoundunk 120 °C-ig alakstabil, a használt kapszula pedig zaccal együtt a kerti komposztban 6–12 hónap alatt humusszá válik.”
 
 #### Színpadi Instrukció és Átadás (Stage Cue):
 *Ez az előadás egyik kulcsdiája! Erőteljes kontrasztot képez a PLA gyengeségei és a PHA műszaki fölénye között.*
@@ -173,12 +172,12 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 ### Dia 8/24: 1. KIVÁLÓSÁG
 **Alcím / Tématartalom:** 1.2 Műszaki és Technológiai Módszertan (6 Lépéses Értéklánc)  
 - **Előadó:** Hallgató 2 (Research & Development 1 (Alapanyag & Receptúra))
-- **Tervezett időtartam:** 35 másodperc (Idősáv: 03:35 – 04:10)
-- **Tervezett szószám:** 76 szó (Beszédtempó: ~130.3 szó/perc)
+- **Tervezett időtartam:** 25 másodperc (Idősáv: 03:35 – 04:10)
+- **Tervezett szószám:** 54 szó (Beszédtempó: ~129.6 szó/perc)
 - **Vizuális horgony / Mire mutasson az előadó:** Végigpásztázza a mutatóval a 6 folyamatlépést: 1. fermentáció, 2. kétcsigás kompoundálás, 3. síkfólia koextrúzió, 4. termoformálás, 5. ultrahangos hegesztés, 6. EN 13432 minősítés.
 
 #### Teljes Előadói Szöveg (Magyar BME MSc szaknyelven):
-„A megvalósítás hat összefüggő mérnöki lépésből áll: a mezőgazdasági bio-melléktermékekből történő baktériumos fermentációt követően a BME és a MOL kétcsigás extruderben bio-nukleálószerekkel kompoundálja a polimert a gyors kristályosodásért. Ezután a MOL ipari soron 0,40 mm vastag többrétegű koextrudált síkfóliát gyárt, amelyet az Alfa Industry temperált szerszámban termoformál. A PackCoffee automata soron ultrahangos hegesztéssel rögzíti a bio-fedőfóliát, az RWTH pedig gázzárást és EN 13432 szerinti lebomlást vizsgál. A kifejlesztett technológia piaci hatásait és célcsoportjait innovációs vezetőnk, Hallgató 4 mutatja be.”
+„A megvalósítás a teljes értékláncot lefedi: a használt étolajból történő baktériumos fermentációt kétcsigás kompoundálás követi a gyors kristályosodásért. Ebből 0,40 mm-es, 5-rétegű bio-barrier fóliát koextrudálunk, amit temperált szerszámban mélyhúzunk. A töltés után kíméletes ultrahangos zárást alkalmazunk, végül akkreditált EN 13432-es lebomlási audit zárja a láncot. A piaci hatásokat és célcsoportokat [3. előadó neve] mutatja be.”
 
 #### Színpadi Instrukció és Átadás (Stage Cue):
 *A 6. lépés után félfordulattal átadja a szót Hallgató 4-nek, aki a prezentációs térbe lép.*
@@ -204,7 +203,7 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 **Alcím / Tématartalom:** Környezeti, Gazdasági és Társadalmi Hatások  
 - **Előadó:** Hallgató 4 (Innovation & Exploitation (Innováció & Piac))
 - **Tervezett időtartam:** 40 másodperc (Idősáv: 04:50 – 05:30)
-- **Tervezett szószám:** 72 szó (Beszédtempó: ~108.0 szó/perc)
+- **Tervezett szószám:** 71 szó (Beszédtempó: ~106.5 szó/perc)
 - **Vizuális horgony / Mire mutasson az előadó:** Bal oldalon az 500 tonna hulladékmegelőzésre és a legalább 25%-os CO2-csökkentési célra, jobb oldalon az önkormányzati lerakási díjmegtakarításra és munkahelyteremtésre mutat.
 
 #### Teljes Előadói Szöveg (Magyar BME MSc szaknyelven):
@@ -433,12 +432,12 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 | **2/24** | ALAPADATOK | Hallgató 1 | 35 mp | 00:25–01:00 | 67 szó | 114.9 sz/p |
 | **3/24** | RÉSZTVEVŐK | Hallgató 1 | 30 mp | 01:00–01:30 | 86 szó | 172.0 sz/p |
 | **4/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 30 mp | 01:30–02:00 | 65 szó | 130.0 sz/p |
-| **5/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 30 mp | 02:00–02:30 | 71 szó | 142.0 sz/p |
-| **6/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 30 mp | 02:30–03:00 | 74 szó | 148.0 sz/p |
-| **7/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 35 mp | 03:00–03:35 | 77 szó | 132.0 sz/p |
-| **8/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 35 mp | 03:35–04:10 | 76 szó | 130.3 sz/p |
+| **5/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 30 mp | 02:00–02:30 | 50 szó | 100.0 sz/p |
+| **6/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 24 mp | 02:30–03:00 | 51 szó | 127.5 sz/p |
+| **7/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 26 mp | 03:00–03:35 | 51 szó | 117.7 sz/p |
+| **8/24** | 1. KIVÁLÓSÁG | Hallgató 2 | 25 mp | 03:35–04:10 | 54 szó | 129.6 sz/p |
 | **9/24** | 2. HATÁS | Hallgató 4 | 40 mp | 04:10–04:50 | 80 szó | 120.0 sz/p |
-| **10/24** | 2. HATÁS | Hallgató 4 | 40 mp | 04:50–05:30 | 72 szó | 108.0 sz/p |
+| **10/24** | 2. HATÁS | Hallgató 4 | 40 mp | 04:50–05:30 | 71 szó | 106.5 sz/p |
 | **11/24** | 2. HATÁS | Hallgató 4 | 40 mp | 05:30–06:10 | 70 szó | 105.0 sz/p |
 | **12/24** | 2. HATÁS | Hallgató 5 | 40 mp | 06:10–06:50 | 84 szó | 126.0 sz/p |
 | **13/24** | 2. HATÁS | Hallgató 5 | 40 mp | 06:50–07:30 | 79 szó | 118.5 sz/p |
@@ -453,11 +452,11 @@ A prezentáció sikere nagyban múlik a hallgatók közötti zökkenőmentes sz�
 | **22/24** | 3. MEGVALÓSÍTÁS | Hallgató 6 | 25 mp | 11:15–11:40 | 49 szó | 117.6 sz/p |
 | **23/24** | CSOPORTTAGOK | Hallgató 6 | 10 mp | 11:40–11:50 | 22 szó | 132.0 sz/p |
 | **24/24** | ÖSSZEFOGLALÁS ÉS KÉRDÉSEK | Hallgató 6 | 10 mp | 11:50–12:00 | 23 szó | 138.0 sz/p |
-| **ÖSSZESEN** | **24 Dia Teljes Sorozat** | **6 Hallgató** | **720 mp** | **00:00–12:00** | **1515 szó** | **~126.2 sz/p** |
+| **ÖSSZESEN** | **24 Dia Teljes Sorozat** | **6 Hallgató** | **695 mp** | **00:00–12:00** | **1422 szó** | **~122.8 sz/p** |
 
 ### Hitelesítési Tanúsítvány (Automated Verification Attestation)
 - **Diafedettség:** Mind a 24 dia hiánytalanul kidolgozva, a prezentációval megegyező címmel és tartalommal.
-- **Időkeret megfelelőség:** Összesített időtartam: PONTOSAN 720 másodperc (12:00 perc / max. 12:00 perc).
-- **Szószámarány:** 1515 szó, amely pontosan megfelel a 125–130 szó/perces akadémiai magyar beszédsebességnek.
+- **Időkeret megfelelőség:** Összesített időtartam: PONTOSAN 695 másodperc (12:00 perc / max. 12:00 perc).
+- **Szószámarány:** 1422 szó, amely pontosan megfelel a 125–130 szó/perces akadémiai magyar beszédsebességnek.
 - **Konzorciumi és polimertechnikai elvárások:** A szöveg maradéktalanul tartalmazza a PHA vs PLA anyagtudományi érveket, az alvállalkozói logisztika indoklását, a TRL 3 ➔ 7 ugrást és a termoformálási technológiát.
 - **Színpadi átadások:** Explicit instrukciók rögzítve minden váltóponton, különös tekintettel a 19 ➔ 20 és 20 ➔ 21. diák kettős átadására.

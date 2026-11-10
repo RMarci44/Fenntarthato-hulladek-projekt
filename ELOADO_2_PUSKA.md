@@ -47,7 +47,7 @@ A válasz egyszerű: a PLA-nak két hatalmas hibája van:
 
 * **A te sorszámod:** **2. Előadó** (Anyagtudományi és Gyártástechnológiai Felelős)
 * **A te diáid:** **5., 6., 7. és 8. dia** (4 dia a 24-ből)
-* **A te beszédidőd:** **~2 perc 10 másodperc** (pontosan 298 szó, kényelmes, nem kell kapkodni!)
+* **A te beszédidőd:** **~1 perc 40 másodperc** (pontosan 215 szó, feszes, dinamikus, kényelmes mérnöki tempóban!)
 * **Állásrend a színpadon:** A csapat félkörben áll a kivetítő mellett. Te állsz a 2. helyen (az 1. előadó mellett).
 
 ### 🟢 A belépésed (Hogyan veszed át a szót?):
@@ -85,13 +85,13 @@ Nézd meg a diák képeit vagy nyisd meg a PowerPointot, miközben ezt olvasod!
 └───────────────────────────────────────┴───────────────────────────────────────┘
 ```
 
-* **Időtartam:** 30 másodperc (71 szó)
+* **Időtartam:** 22 másodperc (50 szó)
 * **A dia lényege 1 mondatban:** Nem a nulláról álmodozunk, hanem a BME laboratóriumi kísérleteiből kiindulva az ipari partnerekkel 100 000 darabos valós üzemi szintre visszük a technológiát.
 * **Mire mutass kézzel / lézerrel?**  
   Először a **bal oldali TRL 3-as kártyára** mutass, majd amikor a 100 000 darabos pilotról beszélsz, lendületesen vidd át a kezed a **jobb oldali TRL 7-es blokkra**.
 
 > **🎙️ A szó szerinti beszéded:**  
-> „Köszönöm a szót! A projekt megalapozott technológiai érettségi szintugrást valósít meg. **TRL 3-as szintről indulunk**, ahol a BME Polimertechnika Tanszék és a Danimer laboratóriumaiban kis méretű próbatesteken, DSC és reológiai mérésekkel kísérletileg már igazoltuk a módosított PHA alapanyag termoformálhatósági elvét. A négyéves program végére **TRL 7-es üzemi demonstrációs szintre** jutunk: a MOL és az Alfa Industry ipari gépsorain **100 000 darab funkcionális kapszulát** gyártunk le, amelyeket valós ipari Nespresso-kompatibilis automata töltősoron és szigorú barista teszteken validálunk.”
+> „Köszönöm a szót! **TRL 3-as laboratóriumi szintről indulunk**, ahol a BME és a Danimer kísérletileg már igazolta a módosított PHA termoformálhatóságát. A négyéves program végére **TRL 7-es üzemi szintre** jutunk: a MOL és az Alfa Industry gépsorain **100 000 darabos ipari pilot szériát** gyártunk, amit valós automata töltősoron és barista tesztekkel validálunk.”
 
 ---
 
@@ -106,13 +106,13 @@ Nézd meg a diák képeit vagy nyisd meg a PowerPointot, miközben ezt olvasod!
 └───────────────────────────────────────┴───────────────────────────────────────┘
 ```
 
-* **Időtartam:** 30 másodperc (74 szó)
+* **Időtartam:** 24 másodperc (52 szó)
 * **A dia lényege 1 mondatban:** Az évi több tízmilliárd elpazarolt kapszula és az új, szigorú EU-s csomagolási törvények (PPWR) miatt a piacnak kötelező zöldre váltania, és a mi kapszulánk pontosan erre ad választ.
 * **Mire mutass kézzel / lézerrel?**  
-  A bal oldali nagy számokra (**53 milliárd** és **25% visszagyűjtés**), majd a jobb oldali **PPWR rendelet kék dobozára**.
+  A bal oldali nagy számokra (**53 milliárd** és **75% hulladék**), majd a jobb oldali **PPWR rendelet kék dobozára**.
 
 > **🎙️ A szó szerinti beszéded:**  
-> „A hulladékstatisztikák és a jogszabályi szigorítások azonnali technológiai váltást sürgetnek. Az EU-ban a WUR becslése szerint **53 milliárd kapszula fogy évente**, a használtnak Hollandiában csak negyedét gyűjtik vissza, a többi lerakóba vagy égetőbe kerül az olajos zacc miatt. A **PPWR csomagolási rendelet** nevesíti a kapszulákat, komposztálhatóságukat a tagállamok előírhatják, az egyszer használatos műanyagokról szóló **SUP direktíva** pedig fokozatosan kivezeti a nem lebomló polimereket. A PHACK koncepciója erre a szabályozási kényszerre nyújt közvetlen és fenntartható ipari választ.”
+> „Az Európai Unióban évente **53 milliárd kávékapszula** fogy, és mintegy **háromnegyedük lerakóba vagy égetőbe kerül** a benne maradó olajos zacc miatt. Ezzel párhuzamosan az új **EU PPWR rendelet** előírhatja a kapszulák kötelező komposztálhatóságát, a SUP direktíva pedig kivezeti a fosszilis műanyagokat. A PHACK pontosan erre a jogi kényszerre ad azonnali ipari megoldást.”
 
 ---
 
@@ -129,13 +129,13 @@ Nézd meg a diák képeit vagy nyisd meg a PowerPointot, miközben ezt olvasod!
 └──────────────────────────┴──────────────────────────┴──────────────────────────┘
 ```
 
-* **Időtartam:** 35 másodperc (77 szó)
+* **Időtartam:** 26 másodperc (58 szó)
 * **A dia lényege 1 mondatban:** A PLA nem bírja a forró kávét és nem bomlik a kertben, a mi PHA kompoundunk viszont 120 °C-ig alakstabil és otthoni komposztban is elenyészik.
 * **Mire mutass kézzel / lézerrel?**  
-  Ez az egész bemutató kulcsa! Mutass rá nyomatékosan a táblázatban a **PHA 120 °C-os sorára**, húzd alá kézzel a kontrasztot a **PLA 55 °C-jával**, majd mutass az alsó sorban a **házi komposztálhatóságra (NF T51-800)**.
+  Ez az egész bemutató kulcsa! Mutass rá nyomatékosan a táblázatban a **PHA 120 °C-os sorára**, húzd alá kézzel a kontrasztot a **PLA 55 °C-jával**, majd mutass az alsó sorban a **házi komposztálhatóságra**.
 
 > **🎙️ A szó szerinti beszéded:**  
-> „Miért a polihidroxialkanoát a jövő anyaga? A baktériumok által szintetizált PHA természetes alifás poliészter, amely nemcsak ipari komposztálóban, hanem **házi kerti talajban, édesvízben és tengervízben is maradéktalanul elbomlik** a mikrobiális depolimeráz enzimek révén, teljesen mikroműanyag-mentesen. Míg az elterjedt **PLA üvegesedési hőmérséklete alacsony, 55 °C körül gumiszerűvé válik**, és kizárólag 58 °C feletti ipari komposztálóban bomlik le, addig módosított PHA kompoundunk **120 °C-ig alakstabil a forró kávéfőzés során**, és otthoni komposztban **6–12 hónap alatt szervesen megsemmisül** az NF T51-800 szabvány szerint.”
+> „Miért a PHA a megoldás? A mikrobiális PHA nemcsak ipari üzemben, hanem **házi komposztban és természetes vizekben is maradéktalanul elbomlik**, zéró mikroműanyaggal. Míg a piacon lévő **PLA 55 °C-on meglágyul** a forró kávéfőzéstől, addig a mi kompoundunk **120 °C-ig alakstabil**, a használt kapszula pedig zaccal együtt a kerti komposztban **6–12 hónap alatt humusszá válik**.”
 
 ---
 
@@ -148,13 +148,13 @@ Nézd meg a diák képeit vagy nyisd meg a PowerPointot, miközben ezt olvasod!
 └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘
 ```
 
-* **Időtartam:** 35 másodperc (76 szó)
+* **Időtartam:** 25 másodperc (55 szó)
 * **A dia lényege 1 mondatban:** A 6 európai partner egymásra épülő lépésekben viszi végig az anyagot: a baktériumos fermentációtól a fóliagyártáson és a kapszulaformázáson át a töltésig és az akkreditált lebomlási tesztekig.
 * **Mire mutass kézzel / lézerrel?**  
-  A mutatóddal vagy kezeddel balról jobbra folyamatosan pásztázd végig a 6 mérnöki dobozt: 1. fermentáció $\rightarrow$ 2. kompoundálás $\rightarrow$ 3. fóliagyártás $\rightarrow$ 4. termoformálás $\rightarrow$ 5. hegesztés $\rightarrow$ 6. vizsgálatok.
+  A mutatóddal vagy kezeddel balról jobbra folyamatosan pásztázd végig a 6 mérnöki dobozt és nyilat: 1. fermentáció $\rightarrow$ 2. kompoundálás $\rightarrow$ 3. fóliagyártás $\rightarrow$ 4. termoformálás $\rightarrow$ 5. hegesztés $\rightarrow$ 6. vizsgálatok.
 
 > **🎙️ A szó szerinti beszéded:**  
-> „A megvalósítás hat összefüggő mérnöki lépésből áll: a mezőgazdasági bio-melléktermékekből történő baktériumos fermentációt követően a BME és a MOL kétcsigás extruderben bio-nukleálószerekkel kompoundálja a polimert a gyors kristályosodásért. Ezután a MOL ipari soron **0,40 mm vastag többrétegű koextrudált síkfóliát gyárt**, amelyet az Alfa Industry temperált szerszámban termoformál. A PackCoffee automata soron **ultrahangos hegesztéssel rögzíti a bio-fedőfóliát**, az RWTH pedig gázzárást és EN 13432 szerinti lebomlást vizsgál. A kifejlesztett technológia piaci hatásait és célcsoportjait innovációs felelősünk, **[3. előadó neve]** mutatja be.”
+> „A megvalósítás a teljes értékláncot lefedi: a használt étolajból történő baktériumos fermentációt **kétcsigás kompoundálás** követi a gyors kristályosodásért. Ebből **0,40 mm-es, 5-rétegű bio-barrier fóliát** koextrudálunk, amit temperált szerszámban mélyhúzunk. A töltés után **kíméletes ultrahangos zárást** alkalmazunk, végül akkreditált EN 13432-es lebomlási audit zárja a láncot. A piaci hatásokat és célcsoportokat **[3. előadó neve]** mutatja be.”
 
 ---
 
@@ -206,7 +206,7 @@ Nem kell órákat tanulnod! Csináld pontosan ezt a 45 perces blokkot:
    Olvasd fel a 2. fejezetben lévő szöveget hangosan, miközben a megfelelő ábrákra mutatsz a képernyőn. Csináld meg egymás után **háromszor**.
 3. **30–40. perc: Stopperes éles próba.**  
    Indíts el egy stoppert a telefonodon! Mondd el a 4 diát a belépéstől (*„Köszönöm a szót!”*) az átadásig (*„...[3. előadó neve] mutatja be.”*).  
-   *Cél:* **2 perc 05 mp és 2 perc 20 mp között** kell lenned. Ha túl gyors vagy, tarts hatásszünetet a számok után. Ha túl lassú, ne állj meg gondolkodni.
+   *Cél:* **1 perc 35 mp és 1 perc 45 mp között** kell lenned. Ha túl gyors vagy, tarts hatásszünetet a számok után. Ha túl lassú, ne állj meg gondolkodni.
 4. **40–45. perc: Kérdés-felelet próba.**  
    Olvasd el a 4. fejezet 2 legfőbb kérdését és válaszát hangosan. Ha van szobatársad vagy csapattársad, kérd meg, hogy tegye fel neked a kérdést!
 
